@@ -1,0 +1,32 @@
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:127:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Perception::[01;32m[KrecievePose[m[K(const nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr&)[m[K’
+  127 | void [01;31m[KPerception[m[K::recievePose(const nav_msgs::msg::Odometry::ConstSharedPtr
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:127:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Perception::[01;32m[KrecievePose[m[K(const nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr&)[m[K’
+In file included from [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:1[m[K:
+[01m[K/root/ros2_ws/src/tp1/include/Perception.h:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Perception[m[K’ defined here
+    9 | class [01;36m[KPerception[m[K
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kstd::vector<float, std::allocator<float> > Perception::[01;32m[KgetLatestSonarRanges[m[K()[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:156:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knumbytes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  156 |     int [01;35m[Knumbytes[m[K = sonarROS.data.size();
+      |         [01;35m[K^~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:157:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knumfields[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  157 |     int [01;35m[Knumfields[m[K = sonarROS.fields.size();
+      |         [01;35m[K^~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In member function ‘[01m[Kvoid NavigationNode::[01;32m[KupdateMap[m[K()[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:83:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klasers[m[K’ was not declared in this scope; did you mean ‘[01m[KlaserROS[m[K’?
+   83 |     if ([01;31m[Klasers[m[K.empty() || lasers.empty()) return;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[KlaserROS[m[K
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:85:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose[m[K’ was not declared in this scope
+   85 |     float x = [01;31m[Kpose[m[K[0];
+      |               [01;31m[K^~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:90:30:[m[K [01;31m[Kerror: [m[K‘[01m[Klasers[m[K’ was not declared in this scope; did you mean ‘[01m[KlaserROS[m[K’?
+   90 |     std::cout << "laser " << [01;31m[Klasers[m[K[0] << "  x: " << x << "  y: " << y << "  yaw: " << yaw << std::endl;
+      |                              [01;31m[K^~~~~~[m[K
+      |                              [32m[KlaserROS[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:76: CMakeFiles/navigation.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

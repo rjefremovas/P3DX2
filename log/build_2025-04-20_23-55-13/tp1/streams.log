@@ -1,0 +1,10 @@
+[0.008s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.044s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Action.cpp.o[0m
+[0.301s] [ 40%] [32m[1mLinking CXX executable navigation[0m
+[0.551s] /usr/bin/ld: CMakeFiles/navigation.dir/src/main.cpp.o: in function `NavigationNode::timer_callback()':
+[0.551s] main.cpp:(.text._ZN14NavigationNode14timer_callbackEv[_ZN14NavigationNode14timer_callbackEv]+0x347): undefined reference to `Action::keepAsFarthestAsPossibleFromWalls(std::vector<float, std::allocator<float> >, std::vector<float, std::allocator<float> >)'
+[0.580s] collect2: error: ld returned 1 exit status
+[0.581s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:234: navigation] Error 1
+[0.581s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[0.581s] gmake: *** [Makefile:146: all] Error 2
+[0.583s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

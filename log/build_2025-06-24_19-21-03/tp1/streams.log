@@ -1,0 +1,11 @@
+[0.145s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.211s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[0.211s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[8.287s] [ 60%] [32m[1mLinking CXX executable navigation[0m
+[8.685s] /usr/bin/ld: CMakeFiles/navigation.dir/src/Perception.cpp.o: in function `Perception::displayLoop()':
+[8.686s] Perception.cpp:(.text+0x1ace): undefined reference to `Perception::updateWindows()'
+[8.727s] collect2: error: ld returned 1 exit status
+[8.729s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:277: navigation] Error 1
+[8.729s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[8.729s] gmake: *** [Makefile:146: all] Error 2
+[8.731s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

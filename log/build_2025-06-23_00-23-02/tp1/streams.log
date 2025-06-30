@@ -1,0 +1,15 @@
+[0.167s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.288s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[0.288s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[2.288s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(Sonars)[m[K’:
+[2.288s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:282:12:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+[2.288s]   282 |       for ([01;31m[Ka[m[K = 1; a < MAP_SIZE; a++){
+[2.289s]       |            [01;31m[K^[m[K
+[2.293s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:283:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kb[m[K’ was not declared in this scope
+[2.293s]   283 |         for ([01;31m[Kb[m[K = 1; b < MAP_SIZE; b++){
+[2.293s]       |              [01;31m[K^[m[K
+[2.765s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[2.765s] gmake[2]: *** Waiting for unfinished jobs....
+[8.851s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[8.851s] gmake: *** [Makefile:146: all] Error 2
+[8.854s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

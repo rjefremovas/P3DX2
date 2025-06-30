@@ -1,0 +1,24 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:204:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(std::vector<float, std::allocator<float> >, std::vector<float, std::allocator<float> >)[m[K’
+  204 | void [01;31m[KPerception[m[K::updateMap(std::vector<float> lasers,std::vector<float> pose)
+      |      [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:1[m[K:
+[01m[K/root/ros2_ws/src/tp1/include/Perception.h:21:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K()[m[K’
+   21 |     void [01;36m[KupdateMap[m[K();
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/include/Perception.h:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Perception[m[K’ defined here
+    9 | class [01;36m[KPerception[m[K
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In member function ‘[01m[Kvoid NavigationNode::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:96:46:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Klasers[m[K’
+   96 |     perception_.updateMap(std::vector<float> [01;31m[Klasers[m[K,std::vector<float> pose);
+      |                                              [01;31m[K^~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:96:72:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpose[m[K’
+   96 |     perception_.updateMap(std::vector<float> lasers,std::vector<float> [01;31m[Kpose[m[K);
+      |                                                                        [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:76: CMakeFiles/navigation.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

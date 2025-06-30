@@ -1,0 +1,8 @@
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In static member function ‘[01m[Kstatic void Perception::[01;32m[KdisplayLoop[m[K()[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:727:29:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+  727 |   glutIdleFunc([01;31m[KupdateWindows()[m[K);
+      |                [01;31m[K~~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

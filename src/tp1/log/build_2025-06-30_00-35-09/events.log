@@ -1,0 +1,255 @@
+[0.000000] (-) TimerEvent: {}
+[0.000573] (tp1) JobQueued: {'identifier': 'tp1', 'dependencies': OrderedDict()}
+[0.000618] (tp1) JobStarted: {'identifier': 'tp1'}
+[0.014173] (tp1) JobProgress: {'identifier': 'tp1', 'progress': 'cmake'}
+[0.014484] (tp1) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2_ws/src/tp1', '-DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/tp1/install/tp1'], 'cwd': '/root/ros2_ws/src/tp1/build/tp1', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'root', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib::/usr/local/Aria/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/root/ros2_ws/install:/root/ros2_ws/src/py_pubsub/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'root', 'NAME': 'DESKTOP-PGR3UH5', 'WSL_INTEROP': '/run/WSL/595_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Oculus/Support/oculus-runtime:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/sina/AppData/Local/Microsoft/WindowsApps:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Users/sina/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/sina/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/sina/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/sina/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sina/go/bin:/mnt/c/Users/sina/AppData/Local/Programs/Ollama:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/0/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/root/ros2_ws/install/tp1:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/install/phi_aria:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/ros2_ws/src/tp1/build/tp1', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/root/ros2_ws/install/py_pubsub/lib/python3.12/site-packages:/root/ros2_ws/src/py_pubsub/install/py_pubsub/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/root/ros2_ws/install/tp1:/root/ros2_ws/install/phi_aria:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.099833] (-) TimerEvent: {}
+[0.200095] (-) TimerEvent: {}
+[0.243370] (tp1) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.300196] (-) TimerEvent: {}
+[0.400440] (-) TimerEvent: {}
+[0.500688] (-) TimerEvent: {}
+[0.600934] (-) TimerEvent: {}
+[0.701193] (-) TimerEvent: {}
+[0.801441] (-) TimerEvent: {}
+[0.901713] (-) TimerEvent: {}
+[0.915575] (tp1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.001801] (-) TimerEvent: {}
+[1.102040] (-) TimerEvent: {}
+[1.202334] (-) TimerEvent: {}
+[1.302603] (-) TimerEvent: {}
+[1.402884] (-) TimerEvent: {}
+[1.503156] (-) TimerEvent: {}
+[1.508583] (tp1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.603255] (-) TimerEvent: {}
+[1.703473] (-) TimerEvent: {}
+[1.777967] (tp1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.784180] (tp1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.784756] (tp1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.785429] (tp1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.803562] (-) TimerEvent: {}
+[1.880319] (tp1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.903686] (-) TimerEvent: {}
+[2.003920] (-) TimerEvent: {}
+[2.104181] (-) TimerEvent: {}
+[2.141592] (tp1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.148014] (tp1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.148255] (tp1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.148748] (tp1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.162621] (tp1) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.204283] (-) TimerEvent: {}
+[2.299211] (tp1) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.304374] (-) TimerEvent: {}
+[2.404632] (-) TimerEvent: {}
+[2.446688] (tp1) StdoutLine: {'line': b'-- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.504720] (-) TimerEvent: {}
+[2.604941] (-) TimerEvent: {}
+[2.652041] (tp1) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.674154] (tp1) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.704198] (tp1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.705028] (-) TimerEvent: {}
+[2.734186] (tp1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.805158] (-) TimerEvent: {}
+[2.850474] (tp1) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.857914] (tp1) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.905263] (-) TimerEvent: {}
+[2.987531] (tp1) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[3.005354] (-) TimerEvent: {}
+[3.105577] (-) TimerEvent: {}
+[3.168984] (tp1) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[3.205677] (-) TimerEvent: {}
+[3.269813] (tp1) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.305787] (-) TimerEvent: {}
+[3.406050] (-) TimerEvent: {}
+[3.495195] (tp1) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[3.506129] (-) TimerEvent: {}
+[3.572243] (tp1) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[3.604574] (tp1) StdoutLine: {'line': b'-- Found tf2: 0.36.9 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[3.606220] (-) TimerEvent: {}
+[3.613366] (tp1) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.9 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[3.682879] (tp1) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[3.684903] (tp1) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.685047] (tp1) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.706307] (-) TimerEvent: {}
+[3.806515] (-) TimerEvent: {}
+[3.906777] (-) TimerEvent: {}
+[4.007033] (-) TimerEvent: {}
+[4.107289] (-) TimerEvent: {}
+[4.207538] (-) TimerEvent: {}
+[4.307806] (-) TimerEvent: {}
+[4.408120] (-) TimerEvent: {}
+[4.508382] (-) TimerEvent: {}
+[4.608640] (-) TimerEvent: {}
+[4.618760] (tp1) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.28/Modules/FindOpenGL.cmake:381 (message):\n'}
+[4.618952] (tp1) StderrLine: {'line': b'  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when\n'}
+[4.619000] (tp1) StderrLine: {'line': b'  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the\n'}
+[4.619038] (tp1) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[4.619073] (tp1) StderrLine: {'line': b'\n'}
+[4.619106] (tp1) StderrLine: {'line': b'  FindOpenGL found both a legacy GL library:\n'}
+[4.619138] (tp1) StderrLine: {'line': b'\n'}
+[4.619169] (tp1) StderrLine: {'line': b'    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so\n'}
+[4.619201] (tp1) StderrLine: {'line': b'\n'}
+[4.619233] (tp1) StderrLine: {'line': b'  and GLVND libraries for OpenGL and GLX:\n'}
+[4.619265] (tp1) StderrLine: {'line': b'\n'}
+[4.619360] (tp1) StderrLine: {'line': b'    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so\n'}
+[4.619408] (tp1) StderrLine: {'line': b'    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so\n'}
+[4.619551] (tp1) StderrLine: {'line': b'\n'}
+[4.619698] (tp1) StderrLine: {'line': b'  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for\n'}
+[4.619822] (tp1) StderrLine: {'line': b'  compatibility with CMake 3.10 and below the legacy GL library will be used.\n'}
+[4.619947] (tp1) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.620088] (tp1) StderrLine: {'line': b'  CMakeLists.txt:18 (find_package)\n'}
+[4.620230] (tp1) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[4.620371] (tp1) StderrLine: {'line': b'\x1b[0m\n'}
+[4.620588] (tp1) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[4.708743] (-) TimerEvent: {}
+[4.769073] (tp1) StdoutLine: {'line': b'-- Found GLUT: /usr/lib/x86_64-linux-gnu/libglut.so  \n'}
+[4.775939] (tp1) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[4.808843] (-) TimerEvent: {}
+[4.889537] (tp1) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.889748] (tp1) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/ros2_ws/src/tp1/include>\n'}
+[4.889807] (tp1) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.892225] (tp1) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.892351] (tp1) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[4.896388] (tp1) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.899077] (tp1) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.908934] (-) TimerEvent: {}
+[4.909582] (tp1) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.909700] (tp1) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.912392] (tp1) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.915775] (tp1) StdoutLine: {'line': b'-- Configuring done (4.9s)\n'}
+[4.940799] (tp1) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.945064] (tp1) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/src/tp1/build/tp1\n'}
+[4.955569] (tp1) CommandEnded: {'returncode': 0}
+[4.956682] (tp1) JobProgress: {'identifier': 'tp1', 'progress': 'build'}
+[4.956722] (tp1) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/src/tp1/build/tp1', '--', '-j16', '-l16'], 'cwd': '/root/ros2_ws/src/tp1/build/tp1', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'root', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib::/usr/local/Aria/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/root/ros2_ws/install:/root/ros2_ws/src/py_pubsub/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'root', 'NAME': 'DESKTOP-PGR3UH5', 'WSL_INTEROP': '/run/WSL/595_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Oculus/Support/oculus-runtime:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/sina/AppData/Local/Microsoft/WindowsApps:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Users/sina/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/sina/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/sina/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/sina/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sina/go/bin:/mnt/c/Users/sina/AppData/Local/Programs/Ollama:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/0/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/root/ros2_ws/install/tp1:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/install/phi_aria:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/ros2_ws/src/tp1/build/tp1', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/root/ros2_ws/install/py_pubsub/lib/python3.12/site-packages:/root/ros2_ws/src/py_pubsub/install/py_pubsub/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/root/ros2_ws/install/tp1:/root/ros2_ws/install/phi_aria:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[5.009059] (-) TimerEvent: {}
+[5.013518] (tp1) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/navigation.dir/src/Action.cpp.o\x1b[0m\n'}
+[5.013735] (tp1) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o\x1b[0m\n'}
+[5.013810] (tp1) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o\x1b[0m\n'}
+[5.014454] (tp1) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/navigation.dir/src/Utils.cpp.o\x1b[0m\n'}
+[5.109164] (-) TimerEvent: {}
+[5.209447] (-) TimerEvent: {}
+[5.309720] (-) TimerEvent: {}
+[5.410033] (-) TimerEvent: {}
+[5.510344] (-) TimerEvent: {}
+[5.610648] (-) TimerEvent: {}
+[5.710952] (-) TimerEvent: {}
+[5.811245] (-) TimerEvent: {}
+[5.911539] (-) TimerEvent: {}
+[6.011801] (-) TimerEvent: {}
+[6.112090] (-) TimerEvent: {}
+[6.212372] (-) TimerEvent: {}
+[6.312648] (-) TimerEvent: {}
+[6.412933] (-) TimerEvent: {}
+[6.513232] (-) TimerEvent: {}
+[6.613540] (-) TimerEvent: {}
+[6.713862] (-) TimerEvent: {}
+[6.814175] (-) TimerEvent: {}
+[6.914488] (-) TimerEvent: {}
+[7.014813] (-) TimerEvent: {}
+[7.115115] (-) TimerEvent: {}
+[7.215464] (-) TimerEvent: {}
+[7.315822] (-) TimerEvent: {}
+[7.416199] (-) TimerEvent: {}
+[7.516548] (-) TimerEvent: {}
+[7.616844] (-) TimerEvent: {}
+[7.717127] (-) TimerEvent: {}
+[7.817429] (-) TimerEvent: {}
+[7.917739] (-) TimerEvent: {}
+[8.018029] (-) TimerEvent: {}
+[8.118311] (-) TimerEvent: {}
+[8.218625] (-) TimerEvent: {}
+[8.318971] (-) TimerEvent: {}
+[8.419261] (-) TimerEvent: {}
+[8.519556] (-) TimerEvent: {}
+[8.619833] (-) TimerEvent: {}
+[8.720117] (-) TimerEvent: {}
+[8.820422] (-) TimerEvent: {}
+[8.920728] (-) TimerEvent: {}
+[9.021040] (-) TimerEvent: {}
+[9.121405] (-) TimerEvent: {}
+[9.221765] (-) TimerEvent: {}
+[9.322083] (-) TimerEvent: {}
+[9.422398] (-) TimerEvent: {}
+[9.522723] (-) TimerEvent: {}
+[9.623019] (-) TimerEvent: {}
+[9.723323] (-) TimerEvent: {}
+[9.823612] (-) TimerEvent: {}
+[9.923916] (-) TimerEvent: {}
+[10.024216] (-) TimerEvent: {}
+[10.124481] (-) TimerEvent: {}
+[10.224748] (-) TimerEvent: {}
+[10.325028] (-) TimerEvent: {}
+[10.425326] (-) TimerEvent: {}
+[10.525608] (-) TimerEvent: {}
+[10.625886] (-) TimerEvent: {}
+[10.726197] (-) TimerEvent: {}
+[10.826504] (-) TimerEvent: {}
+[10.926893] (-) TimerEvent: {}
+[11.027216] (-) TimerEvent: {}
+[11.127520] (-) TimerEvent: {}
+[11.227829] (-) TimerEvent: {}
+[11.328103] (-) TimerEvent: {}
+[11.428387] (-) TimerEvent: {}
+[11.528667] (-) TimerEvent: {}
+[11.628919] (-) TimerEvent: {}
+[11.729176] (-) TimerEvent: {}
+[11.829444] (-) TimerEvent: {}
+[11.929718] (-) TimerEvent: {}
+[12.029985] (-) TimerEvent: {}
+[12.130266] (-) TimerEvent: {}
+[12.230578] (-) TimerEvent: {}
+[12.330867] (-) TimerEvent: {}
+[12.431148] (-) TimerEvent: {}
+[12.531423] (-) TimerEvent: {}
+[12.631691] (-) TimerEvent: {}
+[12.731977] (-) TimerEvent: {}
+[12.832333] (-) TimerEvent: {}
+[12.932657] (-) TimerEvent: {}
+[13.032958] (-) TimerEvent: {}
+[13.133233] (-) TimerEvent: {}
+[13.233566] (-) TimerEvent: {}
+[13.333843] (-) TimerEvent: {}
+[13.434111] (-) TimerEvent: {}
+[13.534381] (-) TimerEvent: {}
+[13.634606] (-) TimerEvent: {}
+[13.734889] (-) TimerEvent: {}
+[13.835201] (-) TimerEvent: {}
+[13.935501] (-) TimerEvent: {}
+[13.991512] (tp1) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable navigation\x1b[0m\n'}
+[14.035586] (-) TimerEvent: {}
+[14.135838] (-) TimerEvent: {}
+[14.236144] (-) TimerEvent: {}
+[14.336419] (-) TimerEvent: {}
+[14.436681] (-) TimerEvent: {}
+[14.536973] (-) TimerEvent: {}
+[14.637298] (-) TimerEvent: {}
+[14.646503] (tp1) StdoutLine: {'line': b'[100%] Built target navigation\n'}
+[14.659004] (tp1) CommandEnded: {'returncode': 0}
+[14.659599] (tp1) JobProgress: {'identifier': 'tp1', 'progress': 'install'}
+[14.670486] (tp1) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/src/tp1/build/tp1'], 'cwd': '/root/ros2_ws/src/tp1/build/tp1', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'root', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib::/usr/local/Aria/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/root/ros2_ws/install:/root/ros2_ws/src/py_pubsub/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'root', 'NAME': 'DESKTOP-PGR3UH5', 'WSL_INTEROP': '/run/WSL/595_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Oculus/Support/oculus-runtime:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/sina/AppData/Local/Microsoft/WindowsApps:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Users/sina/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/sina/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/sina/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/sina/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sina/go/bin:/mnt/c/Users/sina/AppData/Local/Programs/Ollama:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/0/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/root/ros2_ws/install/tp1:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/install/phi_aria:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/ros2_ws/src/tp1/build/tp1', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/root/ros2_ws/install/py_pubsub/lib/python3.12/site-packages:/root/ros2_ws/src/py_pubsub/install/py_pubsub/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/root/ros2_ws/install/tp1:/root/ros2_ws/install/phi_aria:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[14.679200] (tp1) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.679967] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/lib/tp1/navigation\n'}
+[14.692918] (tp1) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/src/tp1/install/tp1/lib/tp1/navigation" to ""\n'}
+[14.693097] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/launch\n'}
+[14.693581] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/launch/p3dx-rosaria.launch.py\n'}
+[14.693839] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/config\n'}
+[14.694361] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/config/p3dx.rviz\n'}
+[14.696380] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/ament_index/resource_index/package_run_dependencies/tp1\n'}
+[14.696892] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/ament_index/resource_index/parent_prefix_path/tp1\n'}
+[14.697427] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/environment/ament_prefix_path.sh\n'}
+[14.697625] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/environment/ament_prefix_path.dsv\n'}
+[14.697817] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/environment/path.sh\n'}
+[14.697979] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/environment/path.dsv\n'}
+[14.698147] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/local_setup.bash\n'}
+[14.698318] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/local_setup.sh\n'}
+[14.698492] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/local_setup.zsh\n'}
+[14.698714] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/local_setup.dsv\n'}
+[14.698878] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/package.dsv\n'}
+[14.699527] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/ament_index/resource_index/packages/tp1\n'}
+[14.700074] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/cmake/tp1Config.cmake\n'}
+[14.700257] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/cmake/tp1Config-version.cmake\n'}
+[14.700459] (tp1) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/tp1/install/tp1/share/tp1/package.xml\n'}
+[14.702424] (tp1) CommandEnded: {'returncode': 0}
+[14.726277] (tp1) JobEnded: {'identifier': 'tp1', 'rc': 0}
+[14.727440] (-) EventReactorShutdown: {}

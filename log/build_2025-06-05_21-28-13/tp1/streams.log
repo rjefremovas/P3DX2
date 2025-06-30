@@ -1,0 +1,9 @@
+[0.152s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.227s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[2.035s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:17:33:[m[K [01;31m[Kerror: [m[Knarrowing conversion of ‘[01m[K5.0e-1[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kint[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[2.035s]    17 | int map[MAP_SIZE][MAP_SIZE] = {{[01;31m[K0.5[m[K}};
+[2.035s]       |                                 [01;31m[K^~~[m[K
+[2.511s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[2.512s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[2.512s] gmake: *** [Makefile:146: all] Error 2
+[2.515s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

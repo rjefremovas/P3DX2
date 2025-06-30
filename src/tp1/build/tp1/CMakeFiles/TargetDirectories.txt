@@ -1,0 +1,10 @@
+/root/ros2_ws/src/tp1/build/tp1/CMakeFiles/uninstall.dir
+/root/ros2_ws/src/tp1/build/tp1/CMakeFiles/tp1_uninstall.dir
+/root/ros2_ws/src/tp1/build/tp1/CMakeFiles/navigation.dir
+/root/ros2_ws/src/tp1/build/tp1/CMakeFiles/test.dir
+/root/ros2_ws/src/tp1/build/tp1/CMakeFiles/edit_cache.dir
+/root/ros2_ws/src/tp1/build/tp1/CMakeFiles/rebuild_cache.dir
+/root/ros2_ws/src/tp1/build/tp1/CMakeFiles/list_install_components.dir
+/root/ros2_ws/src/tp1/build/tp1/CMakeFiles/install.dir
+/root/ros2_ws/src/tp1/build/tp1/CMakeFiles/install/local.dir
+/root/ros2_ws/src/tp1/build/tp1/CMakeFiles/install/strip.dir

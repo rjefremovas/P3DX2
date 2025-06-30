@@ -1,0 +1,32 @@
+[0.015s] Invoking command in '/root/ros2_ws/build/DQN': /usr/bin/cmake /root/ros2_ws/src/dqn -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/DQN
+[0.273s] -- The C compiler identification is GNU 13.3.0
+[0.969s] -- The CXX compiler identification is GNU 13.3.0
+[1.496s] -- Detecting C compiler ABI info
+[1.722s] -- Detecting C compiler ABI info - done
+[1.728s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.729s] -- Detecting C compile features
+[1.729s] -- Detecting C compile features - done
+[1.821s] -- Detecting CXX compiler ABI info
+[2.048s] -- Detecting CXX compiler ABI info - done
+[2.054s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.054s] -- Detecting CXX compile features
+[2.054s] -- Detecting CXX compile features - done
+[3.082s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[3.083s]   By not providing "FindTorch.cmake" in CMAKE_MODULE_PATH this project has
+[3.083s]   asked CMake to find a package configuration file provided by "Torch", but
+[3.083s]   CMake did not find one.
+[3.083s] 
+[3.083s]   Could not find a package configuration file provided by "Torch" with any of
+[3.083s]   the following names:
+[3.083s] 
+[3.084s]     TorchConfig.cmake
+[3.084s]     torch-config.cmake
+[3.084s] 
+[3.084s]   Add the installation prefix of "Torch" to CMAKE_PREFIX_PATH or set
+[3.084s]   "Torch_DIR" to a directory containing one of the above files.  If "Torch"
+[3.084s]   provides a separate development package or SDK, be sure it has been
+[3.084s]   installed.
+[3.085s] 
+[3.085s] [0m
+[3.085s] -- Configuring incomplete, errors occurred!
+[3.085s] Invoked command in '/root/ros2_ws/build/DQN' returned '1': /usr/bin/cmake /root/ros2_ws/src/dqn -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/DQN

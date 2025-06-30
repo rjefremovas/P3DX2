@@ -1,0 +1,80 @@
+[0.146s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.203s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[0.203s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[1.833s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:334:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstep_count[m[K’ does not name a type
+[1.833s]   334 |     [01;31m[Kstep_count[m[K++;
+[1.833s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.833s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:335:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[1.833s]   335 |     [01;31m[Kif[m[K (step_count % SUBMAP_CREATION_INTERVAL == 0)
+[1.833s]       |     [01;31m[K^~[m[K
+[1.835s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:348:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpredicted_x[m[K’ does not name a type
+[1.835s]   348 |     [01;31m[Kpredicted_x[m[K.push_back(map_x);
+[1.835s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.837s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:349:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpredicted_y[m[K’ does not name a type
+[1.837s]   349 |     [01;31m[Kpredicted_y[m[K.push_back(map_y);
+[1.837s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.841s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:350:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpredicted_yaw[m[K’ does not name a type
+[1.841s]   350 |     [01;31m[Kpredicted_yaw[m[K.push_back(robot_yaw);
+[1.841s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[1.847s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:351:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kground_truth_x[m[K’ does not name a type
+[1.847s]   351 |     [01;31m[Kground_truth_x[m[K.push_back(cx);
+[1.847s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.851s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:352:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kground_truth_y[m[K’ does not name a type
+[1.852s]   352 |     [01;31m[Kground_truth_y[m[K.push_back(cy);
+[1.852s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.858s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:353:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kground_truth_yaw[m[K’ does not name a type
+[1.858s]   353 |     [01;31m[Kground_truth_yaw[m[K.push_back(yaw);
+[1.858s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.858s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:361:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+[1.858s]   361 |     [01;31m[Kfor[m[K (int i = 0; i < n; ++i) {
+[1.858s]       |     [01;31m[K^~~[m[K
+[1.859s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:361:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ does not name a type
+[1.859s]   361 |     for (int i = 0; [01;31m[Ki[m[K < n; ++i) {
+[1.859s]       |                     [01;31m[K^[m[K
+[1.859s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:361:28:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K++[m[K’ token
+[1.859s]   361 |     for (int i = 0; i < n; [01;31m[K++[m[Ki) {
+[1.860s]       |                            [01;31m[K^~[m[K
+[1.860s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:377:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[1.860s]   377 |     std::[01;31m[Kcout[m[K << "RMSE X: " << rmse_x << std::endl;
+[1.860s]       |          [01;31m[K^~~~[m[K
+[1.860s] In file included from [01m[K/root/ros2_ws/src/tp1/include/Utils.h:5[m[K,
+[1.860s]                  from [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:2[m[K:
+[1.860s] [01m[K/usr/include/c++/13/iostream:63:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[1.860s]    63 |   extern ostream [01;36m[Kcout[m[K;          ///< Linked to standard output
+[1.860s]       |                  [01;36m[K^~~~[m[K
+[1.860s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:378:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[1.860s]   378 |     std::[01;31m[Kcout[m[K << "RMSE Y: " << rmse_y << std::endl;
+[1.860s]       |          [01;31m[K^~~~[m[K
+[1.860s] [01m[K/usr/include/c++/13/iostream:63:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[1.860s]    63 |   extern ostream [01;36m[Kcout[m[K;          ///< Linked to standard output
+[1.860s]       |                  [01;36m[K^~~~[m[K
+[1.860s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:379:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[1.860s]   379 |     std::[01;31m[Kcout[m[K << "RMSE Y: " << rmse_yaw << std::endl;
+[1.860s]       |          [01;31m[K^~~~[m[K
+[1.860s] [01m[K/usr/include/c++/13/iostream:63:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[1.860s]    63 |   extern ostream [01;36m[Kcout[m[K;          ///< Linked to standard output
+[1.860s]       |                  [01;36m[K^~~~[m[K
+[1.860s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:380:3:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[1.860s]   380 |   [01;31m[K}[m[K
+[1.861s]       |   [01;31m[K^[m[K
+[1.861s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:456:7:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kfloat Perception::[01;32m[KcompareSubmaps[m[K(const std::vector<int>&, const std::vector<int>&)[m[K’
+[1.861s]   456 | float [01;31m[KPerception[m[K::compareSubmaps(const std::vector<int>& submap1, const std::vector<int>& submap2)
+[1.861s]       |       [01;31m[K^~~~~~~~~~[m[K
+[1.861s] In file included from [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:1[m[K:
+[1.861s] [01m[K/root/ros2_ws/src/tp1/include/Perception.h:30:21:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kstd::vector<int> Perception::[01;32m[KcompareSubmaps[m[K(const std::vector<int>&, const std::vector<int>&)[m[K’
+[1.861s]    30 |     std::vector<int>[01;36m[KcompareSubmaps[m[K(const std::vector<int>& submap1, const std::vector<int>& submap2);
+[1.861s]       |                     [01;36m[K^~~~~~~~~~~~~~[m[K
+[1.861s] [01m[K/root/ros2_ws/src/tp1/include/Perception.h:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Perception[m[K’ defined here
+[1.861s]     9 | class [01;36m[KPerception[m[K
+[1.861s]       |       [01;36m[K^~~~~~~~~~[m[K
+[1.861s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KdetectLoopClosure[m[K()[m[K’:
+[1.861s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:483:42:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::vector<int>[m[K’ to ‘[01m[Kfloat[m[K’ in initialization
+[1.861s]   483 |         float similarity = [01;31m[KcompareSubmaps(current_submap, submaps[i])[m[K;
+[1.861s]       |                            [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.861s]       |                                          [01;31m[K|[m[K
+[1.861s]       |                                          [01;31m[Kstd::vector<int>[m[K
+[2.236s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[2.236s] gmake[2]: *** Waiting for unfinished jobs....
+[6.624s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[6.624s] gmake: *** [Makefile:146: all] Error 2
+[6.625s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

@@ -1,0 +1,8 @@
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(Sonars)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:285:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kfmodf[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kmodf[m[K’?
+  285 |           sonar_angle = std::[01;31m[Kfmodf[m[K(sonars.angle[k]+yaw + PI, 2.0 * PI);
+      |                              [01;31m[K^~~~~[m[K
+      |                              [32m[Kmodf[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,23 @@
+[0.008s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.044s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Action.cpp.o[0m
+[0.252s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:[m[K In member function ‘[01m[Kvoid Action::[01;32m[KavoidObstacles[m[K(std::vector<float>, std::vector<float>)[m[K’:
+[0.252s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksleep[m[K’ was not declared in this scope
+[0.252s]    19 |         [01;31m[Ksleep[m[K(500);
+[0.252s]       |         [01;31m[K^~~~~[m[K
+[0.254s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:23:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksleep[m[K’ was not declared in this scope
+[0.254s]    23 |         [01;31m[Ksleep[m[K(500);
+[0.254s]       |         [01;31m[K^~~~~[m[K
+[0.255s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:13:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksonars[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.255s]    13 | void Action::avoidObstacles(std::vector<float> lasers, [01;35m[Kstd::vector<float> sonars[m[K)
+[0.255s]       |                                                        [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[0.255s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:[m[K In member function ‘[01m[Kvoid Action::[01;32m[KkeepAsFarthestAsPossibleFromWalls[m[K(std::vector<float>, std::vector<float>)[m[K’:
+[0.255s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:30:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klasers[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.255s]    30 | void Action::keepAsFarthestAsPossibleFromWalls([01;35m[Kstd::vector<float> lasers[m[K, std::vector<float> sonars)
+[0.255s]       |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[0.255s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:30:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksonars[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.255s]    30 | void Action::keepAsFarthestAsPossibleFromWalls(std::vector<float> lasers, [01;35m[Kstd::vector<float> sonars[m[K)
+[0.255s]       |                                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[0.289s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:90: CMakeFiles/navigation.dir/src/Action.cpp.o] Error 1
+[0.289s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[0.289s] gmake: *** [Makefile:146: all] Error 2
+[0.291s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

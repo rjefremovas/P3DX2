@@ -1,0 +1,28 @@
+[0.127s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.172s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[0.172s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[1.495s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kstd::vector<float, std::allocator<float> > Perception::[01;32m[KgetLatestSonarRanges[m[K()[m[K’:
+[1.495s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:165:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knumbytes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.495s]   165 |     int [01;35m[Knumbytes[m[K = sonarROS.data.size();
+[1.495s]       |         [01;35m[K^~~~~~~~[m[K
+[1.495s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:166:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knumfields[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.495s]   166 |     int [01;35m[Knumfields[m[K = sonarROS.fields.size();
+[1.495s]       |         [01;35m[K^~~~~~~~~[m[K
+[1.497s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In static member function ‘[01m[Kstatic void Perception::[01;32m[KdisplayLoop[m[K()[m[K’:
+[1.497s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:268:19:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Perception::[01;32m[KdrawMap[m[K()[m[K’
+[1.497s]   268 |   glutDisplayFunc([01;31m[KdrawMap[m[K);
+[1.497s]       |                   [01;31m[K^~~~~~~[m[K
+[1.497s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:233:6:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.497s]   233 | void [01;36m[KPerception[m[K::drawMap()
+[1.497s]       |      [01;36m[K^~~~~~~~~~[m[K
+[1.497s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:269:16:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Perception::[01;32m[KdrawMap[m[K()[m[K’
+[1.497s]   269 |   glutIdleFunc([01;31m[KdrawMap[m[K);
+[1.497s]       |                [01;31m[K^~~~~~~[m[K
+[1.497s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:233:6:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.497s]   233 | void [01;36m[KPerception[m[K::drawMap()
+[1.497s]       |      [01;36m[K^~~~~~~~~~[m[K
+[1.855s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[1.855s] gmake[2]: *** Waiting for unfinished jobs....
+[6.271s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[6.271s] gmake: *** [Makefile:146: all] Error 2
+[6.273s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

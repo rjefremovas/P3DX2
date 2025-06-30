@@ -1,0 +1,13 @@
+[0.133s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.181s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[1.573s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(float, float)[m[K’:
+[1.574s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:260:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_change[m[K’ was not declared in this scope
+[1.574s]   260 |           [01;31m[Kangular_change[m[K = angVel * 57.2957835f * (PI / 180.0f) * delta_time;
+[1.574s]       |           [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.586s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:263:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_change[m[K’ was not declared in this scope
+[1.586s]   263 |           [01;31m[Kangular_change[m[K = angVel * (PI / 180.0f) * delta_time;
+[1.586s]       |           [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.974s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[1.974s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[1.974s] gmake: *** [Makefile:146: all] Error 2
+[1.976s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

@@ -1,0 +1,101 @@
+[0.145s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake /root/ros2_ws/src/tp1 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/tp1
+[0.279s] -- The C compiler identification is GNU 13.3.0
+[0.914s] -- The CXX compiler identification is GNU 13.3.0
+[1.517s] -- Detecting C compiler ABI info
+[1.736s] -- Detecting C compiler ABI info - done
+[1.742s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.742s] -- Detecting C compile features
+[1.742s] -- Detecting C compile features - done
+[1.840s] -- Detecting CXX compiler ABI info
+[2.102s] -- Detecting CXX compiler ABI info - done
+[2.108s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.109s] -- Detecting CXX compile features
+[2.109s] -- Detecting CXX compile features - done
+[2.113s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.243s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.346s] -- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.529s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.544s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.561s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.580s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.656s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.659s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.753s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.919s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.003s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.198s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[3.249s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[3.270s] -- Found tf2: 0.36.9 (/opt/ros/jazzy/share/tf2/cmake)
+[3.277s] -- Found tf2_geometry_msgs: 0.36.9 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[3.336s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[3.337s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.337s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.181s] [33mCMake Warning (dev) at /usr/share/cmake-3.28/Modules/FindOpenGL.cmake:381 (message):
+[4.182s]   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+[4.182s]   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+[4.182s]   cmake_policy command to set the policy and suppress this warning.
+[4.182s] 
+[4.182s]   FindOpenGL found both a legacy GL library:
+[4.182s] 
+[4.182s]     OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+[4.182s] 
+[4.182s]   and GLVND libraries for OpenGL and GLX:
+[4.183s] 
+[4.183s]     OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+[4.183s]     OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+[4.183s] 
+[4.183s]   OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+[4.183s]   compatibility with CMake 3.10 and below the legacy GL library will be used.
+[4.183s] Call Stack (most recent call first):
+[4.183s]   CMakeLists.txt:18 (find_package)
+[4.183s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.183s] [0m
+[4.183s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[4.334s] -- Found GLUT: /usr/lib/x86_64-linux-gnu/libglut.so  
+[4.339s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.442s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.443s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/ros2_ws/src/tp1/include>
+[4.443s] -- Configured cppcheck exclude dirs and/or files: 
+[4.445s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.445s] -- Configured 'flake8' exclude dirs and/or files: 
+[4.450s] -- Added test 'lint_cmake' to check CMake code style
+[4.453s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.471s] -- Added test 'uncrustify' to check C / C++ code style
+[4.472s] -- Configured uncrustify additional arguments: 
+[4.474s] -- Added test 'xmllint' to check XML markup files
+[4.476s] -- Configuring done (4.3s)
+[4.495s] -- Generating done (0.0s)
+[4.498s] -- Build files have been written to: /root/ros2_ws/build/tp1
+[4.509s] Invoked command in '/root/ros2_ws/build/tp1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake /root/ros2_ws/src/tp1 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/tp1
+[4.510s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[4.567s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Utils.cpp.o[0m
+[4.567s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[4.568s] [ 80%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[4.568s] [ 80%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Action.cpp.o[0m
+[13.748s] [100%] [32m[1mLinking CXX executable navigation[0m
+[14.246s] [100%] Built target navigation
+[14.259s] Invoked command in '/root/ros2_ws/build/tp1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[14.260s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --install /root/ros2_ws/build/tp1
+[14.269s] -- Install configuration: ""
+[14.270s] -- Installing: /root/ros2_ws/install/tp1/lib/tp1/navigation
+[14.283s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/tp1/lib/tp1/navigation" to ""
+[14.283s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/launch
+[14.284s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/launch/p3dx-rosaria.launch.py
+[14.285s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/config
+[14.285s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/config/p3dx.rviz
+[14.286s] -- Installing: /root/ros2_ws/install/tp1/share/ament_index/resource_index/package_run_dependencies/tp1
+[14.287s] -- Installing: /root/ros2_ws/install/tp1/share/ament_index/resource_index/parent_prefix_path/tp1
+[14.287s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/environment/ament_prefix_path.sh
+[14.287s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/environment/ament_prefix_path.dsv
+[14.287s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/environment/path.sh
+[14.288s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/environment/path.dsv
+[14.288s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/local_setup.bash
+[14.288s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/local_setup.sh
+[14.288s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/local_setup.zsh
+[14.288s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/local_setup.dsv
+[14.289s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/package.dsv
+[14.289s] -- Installing: /root/ros2_ws/install/tp1/share/ament_index/resource_index/packages/tp1
+[14.290s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/cmake/tp1Config.cmake
+[14.290s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/cmake/tp1Config-version.cmake
+[14.290s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/package.xml
+[14.292s] Invoked command in '/root/ros2_ws/build/tp1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --install /root/ros2_ws/build/tp1

@@ -1,0 +1,16 @@
+[0.149s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.222s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[0.222s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[2.134s] [01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In member function ‘[01m[Kvoid NavigationNode::[01;32m[Ktimer_callback[m[K()[m[K’:
+[2.134s] [01m[K/root/ros2_ws/src/tp1/src/main.cpp:129:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPerception::updateMap(geometry_msgs::msg::Vector3_<std::allocator<void> >::_x_type&, geometry_msgs::msg::Vector3_<std::allocator<void> >::_z_type&, std::vector<float>&)[m[K’
+[2.134s]   129 |     [01;31m[Kperception_.updateMap(twistROS.linear.x, twistROS.angular.z, sonars)[m[K;
+[2.134s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.134s] In file included from [01m[K/root/ros2_ws/src/tp1/src/main.cpp:15[m[K:
+[2.134s] [01m[K/root/ros2_ws/src/tp1/include/Perception.h:21:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(std::vector<float>)[m[K’
+[2.134s]    21 |     void [01;36m[KupdateMap[m[K(std::vector<float> sonars);
+[2.134s]       |          [01;36m[K^~~~~~~~~[m[K
+[2.134s] [01m[K/root/ros2_ws/src/tp1/include/Perception.h:21:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[4.528s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:76: CMakeFiles/navigation.dir/src/main.cpp.o] Error 1
+[4.528s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[4.528s] gmake: *** [Makefile:146: all] Error 2
+[4.531s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

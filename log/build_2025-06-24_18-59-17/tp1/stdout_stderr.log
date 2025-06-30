@@ -1,0 +1,10 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:692:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstatic void Perception::[01;32m[KdisplayLoop[m[K()[m[K’
+  692 | void [01;31m[KPerception[m[K::displayLoop(){
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:661:6:[m[K [01;36m[Knote: [m[K‘[01m[Kstatic void Perception::[01;32m[KdisplayLoop[m[K()[m[K’ previously defined here
+  661 | void [01;36m[KPerception[m[K::displayLoop()
+      |      [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

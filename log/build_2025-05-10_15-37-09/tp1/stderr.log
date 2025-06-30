@@ -1,0 +1,7 @@
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(std::vector<float, std::allocator<float> >&, std::vector<float, std::allocator<float> >&)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:220:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klasers[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  220 | void Perception::updateMap([01;35m[Kstd::vector<float> &lasers[m[K,std::vector<float> &pose)
+      |                            [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:220:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  220 | void Perception::updateMap(std::vector<float> &lasers,[01;35m[Kstd::vector<float> &pose[m[K)
+      |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K

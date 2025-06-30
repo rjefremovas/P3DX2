@@ -1,0 +1,29 @@
+[0.135s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.179s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[2.118s] [ 40%] [32m[1mLinking CXX executable navigation[0m
+[2.440s] [100%] Built target navigation
+[2.448s] Invoked command in '/root/ros2_ws/build/tp1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[2.449s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --install /root/ros2_ws/build/tp1
+[2.453s] -- Install configuration: ""
+[2.454s] -- Installing: /root/ros2_ws/install/tp1/lib/tp1/navigation
+[2.461s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/tp1/lib/tp1/navigation" to ""
+[2.461s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/launch
+[2.462s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/launch/p3dx-rosaria.launch.py
+[2.462s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/config
+[2.462s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/config/p3dx.rviz
+[2.462s] -- Up-to-date: /root/ros2_ws/install/tp1/share/ament_index/resource_index/package_run_dependencies/tp1
+[2.462s] -- Up-to-date: /root/ros2_ws/install/tp1/share/ament_index/resource_index/parent_prefix_path/tp1
+[2.462s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/environment/ament_prefix_path.sh
+[2.463s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/environment/ament_prefix_path.dsv
+[2.464s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/environment/path.sh
+[2.464s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/environment/path.dsv
+[2.464s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/local_setup.bash
+[2.464s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/local_setup.sh
+[2.464s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/local_setup.zsh
+[2.464s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/local_setup.dsv
+[2.465s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/package.dsv
+[2.465s] -- Up-to-date: /root/ros2_ws/install/tp1/share/ament_index/resource_index/packages/tp1
+[2.465s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/cmake/tp1Config.cmake
+[2.465s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/cmake/tp1Config-version.cmake
+[2.466s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/package.xml
+[2.466s] Invoked command in '/root/ros2_ws/build/tp1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --install /root/ros2_ws/build/tp1

@@ -1,0 +1,11 @@
+[0.141s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.219s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[2.086s] [01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[2.087s] [01m[K/root/ros2_ws/src/tp1/src/main.cpp:175:16:[m[K [01;31m[Kerror: [m[K‘[01m[KoglThread2[m[K’ was not declared in this scope; did you mean ‘[01m[Kogl2Thread2[m[K’?
+[2.087s]   175 |   pthread_join([01;31m[KoglThread2[m[K, NULL);
+[2.087s]       |                [01;31m[K^~~~~~~~~~[m[K
+[2.087s]       |                [32m[Kogl2Thread2[m[K
+[4.655s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:76: CMakeFiles/navigation.dir/src/main.cpp.o] Error 1
+[4.655s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[4.656s] gmake: *** [Makefile:146: all] Error 2
+[4.659s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

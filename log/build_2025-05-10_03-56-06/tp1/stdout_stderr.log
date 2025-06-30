@@ -1,0 +1,8 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In constructor ‘[01m[KNavigationNode::[01;32m[KNavigationNode[m[K(Action&, Perception&)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_sonar[m[K’ was not declared in this scope
+   45 |     [01;31m[Ksub_sonar[m[K = this->create_subscription<sensor_msgs::msg::PointCloud2>("/sonar", 100,
+      |     [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:76: CMakeFiles/navigation.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

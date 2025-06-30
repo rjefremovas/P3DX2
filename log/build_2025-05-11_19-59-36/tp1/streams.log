@@ -1,0 +1,22 @@
+[0.135s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.191s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[1.932s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:453:7:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kfloat Perception::[01;32m[KcompareSubmaps[m[K(const std::vector<int>&, const std::vector<int>&)[m[K’
+[1.932s]   453 | float [01;31m[KPerception[m[K::compareSubmaps(const std::vector<int>& submap1, const std::vector<int>& submap2)
+[1.932s]       |       [01;31m[K^~~~~~~~~~[m[K
+[1.932s] In file included from [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:1[m[K:
+[1.932s] [01m[K/root/ros2_ws/src/tp1/include/Perception.h:30:21:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kstd::vector<int> Perception::[01;32m[KcompareSubmaps[m[K(const std::vector<int>&, const std::vector<int>&)[m[K’
+[1.932s]    30 |     std::vector<int>[01;36m[KcompareSubmaps[m[K(const std::vector<int>& submap1, const std::vector<int>& submap2);
+[1.932s]       |                     [01;36m[K^~~~~~~~~~~~~~[m[K
+[1.932s] [01m[K/root/ros2_ws/src/tp1/include/Perception.h:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Perception[m[K’ defined here
+[1.933s]     9 | class [01;36m[KPerception[m[K
+[1.933s]       |       [01;36m[K^~~~~~~~~~[m[K
+[1.933s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KdetectLoopClosure[m[K()[m[K’:
+[1.933s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:480:42:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::vector<int>[m[K’ to ‘[01m[Kfloat[m[K’ in initialization
+[1.933s]   480 |         float similarity = [01;31m[KcompareSubmaps(current_submap, submaps[i])[m[K;
+[1.933s]       |                            [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.933s]       |                                          [01;31m[K|[m[K
+[1.933s]       |                                          [01;31m[Kstd::vector<int>[m[K
+[2.333s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[2.333s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[2.333s] gmake: *** [Makefile:146: all] Error 2
+[2.335s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

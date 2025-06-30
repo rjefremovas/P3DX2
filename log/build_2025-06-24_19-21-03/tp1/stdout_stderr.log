@@ -1,0 +1,9 @@
+[ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable navigation[0m
+/usr/bin/ld: CMakeFiles/navigation.dir/src/Perception.cpp.o: in function `Perception::displayLoop()':
+Perception.cpp:(.text+0x1ace): undefined reference to `Perception::updateWindows()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:277: navigation] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

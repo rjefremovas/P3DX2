@@ -1,0 +1,151 @@
+[0.131s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.177s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[0.177s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[1.537s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kstd::vector<float, std::allocator<float> > Perception::[01;32m[KgetLatestSonarRanges[m[K()[m[K’:
+[1.537s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:156:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knumbytes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.537s]   156 |     int [01;35m[Knumbytes[m[K = sonarROS.data.size();
+[1.537s]       |         [01;35m[K^~~~~~~~[m[K
+[1.538s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:157:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knumfields[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.538s]   157 |     int [01;35m[Knumfields[m[K = sonarROS.fields.size();
+[1.538s]       |         [01;35m[K^~~~~~~~~[m[K
+[1.541s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K updateMap[m[K()[m[K’:
+[1.541s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:197:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klasers[m[K’ was not declared in this scope
+[1.541s]   197 |     if ([01;31m[Klasers[m[K.empty() || lasers.empty()) return;
+[1.541s]       |         [01;31m[K^~~~~~[m[K
+[1.543s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:199:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose[m[K’ was not declared in this scope
+[1.543s]   199 |     float x = [01;31m[Kpose[m[K[0];
+[1.543s]       |               [01;31m[K^~~~[m[K
+[1.545s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:202:14:[m[K [01;31m[Kerror: [m[K‘[01m[KMAP_SIZE[m[K’ was not declared in this scope
+[1.545s]   202 |     int cx = [01;31m[KMAP_SIZE[m[K / 2 + int(x / RESOLUTION);
+[1.546s]       |              [01;31m[K^~~~~~~~[m[K
+[1.548s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:202:37:[m[K [01;31m[Kerror: [m[K‘[01m[KRESOLUTION[m[K’ was not declared in this scope
+[1.548s]   202 |     int cx = MAP_SIZE / 2 + int(x / [01;31m[KRESOLUTION[m[K);
+[1.548s]       |                                     [01;31m[K^~~~~~~~~~[m[K
+[1.550s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:204:30:[m[K [01;31m[Kerror: [m[K‘[01m[Klasers[m[K’ was not declared in this scope
+[1.550s]   204 |     std::cout << "laser " << [01;31m[Klasers[m[K[0] << "  x: " << x << "  y: " << y << "  yaw: " << yaw << std::endl;
+[1.550s]       |                              [01;31m[K^~~~~~[m[K
+[1.551s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:205:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap[m[K’ was not declared in this scope
+[1.551s]   205 |     [01;31m[Kmap[m[K[cx][cy] = 2;
+[1.551s]       |     [01;31m[K^~~[m[K
+[1.551s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:205:5:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.551s] In file included from [01m[K/usr/include/c++/13/map:63[m[K,
+[1.551s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[1.551s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.551s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.551s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[1.551s]                  from [01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+[1.551s]                  from [01m[K/opt/ros/jazzy/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:60[m[K,
+[1.551s]                  from [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:3[m[K:
+[1.551s] [01m[K/usr/include/c++/13/bits/stl_map.h:102:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map[m[K’
+[1.551s]   102 |     class [01;36m[Kmap[m[K
+[1.551s]       |           [01;36m[K^~~[m[K
+[1.551s] [01m[K/usr/include/c++/13/map:80:13:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::map[m[K’
+[1.551s]    80 |       using [01;36m[Kmap[m[K
+[1.551s]       |             [01;36m[K^~~[m[K
+[1.553s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:209:21:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserROS[m[K’ was not declared in this scope
+[1.553s]   209 |       float angle = [01;31m[KlaserROS[m[K.angle_min + i * laserROS.angle_increment + yaw;
+[1.553s]       |                     [01;31m[K^~~~~~~~[m[K
+[1.557s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K drawMap[m[K()[m[K’:
+[1.557s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:223:11:[m[K [01;31m[Kerror: [m[K‘[01m[KGL_COLOR_BUFFER_BIT[m[K’ was not declared in this scope
+[1.557s]   223 |   glClear([01;31m[KGL_COLOR_BUFFER_BIT[m[K);
+[1.557s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.559s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:223:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglClear[m[K’ was not declared in this scope
+[1.559s]   223 |   [01;31m[KglClear[m[K(GL_COLOR_BUFFER_BIT);
+[1.559s]       |   [01;31m[K^~~~~~~[m[K
+[1.561s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:224:11:[m[K [01;31m[Kerror: [m[K‘[01m[KGL_POINTS[m[K’ was not declared in this scope
+[1.561s]   224 |   glBegin([01;31m[KGL_POINTS[m[K);
+[1.561s]       |           [01;31m[K^~~~~~~~~[m[K
+[1.563s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:224:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglBegin[m[K’ was not declared in this scope
+[1.563s]   224 |   [01;31m[KglBegin[m[K(GL_POINTS);
+[1.563s]       |   [01;31m[K^~~~~~~[m[K
+[1.565s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:225:23:[m[K [01;31m[Kerror: [m[K‘[01m[KMAP_SIZE[m[K’ was not declared in this scope
+[1.565s]   225 |   for (int x = 0; x < [01;31m[KMAP_SIZE[m[K; ++x)
+[1.566s]       |                       [01;31m[K^~~~~~~~[m[K
+[1.566s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:229:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap[m[K’ was not declared in this scope
+[1.566s]   229 |       if ([01;31m[Kmap[m[K[x][y] == 1)
+[1.566s]       |           [01;31m[K^~~[m[K
+[1.566s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:229:11:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.566s] [01m[K/usr/include/c++/13/bits/stl_map.h:102:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map[m[K’
+[1.566s]   102 |     class [01;36m[Kmap[m[K
+[1.566s]       |           [01;36m[K^~~[m[K
+[1.566s] [01m[K/usr/include/c++/13/map:80:13:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::map[m[K’
+[1.566s]    80 |       using [01;36m[Kmap[m[K
+[1.566s]       |             [01;36m[K^~~[m[K
+[1.568s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:231:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglColor3f[m[K’ was not declared in this scope
+[1.568s]   231 |         [01;31m[KglColor3f[m[K(1.0f, 0.0f, 0.0f);
+[1.568s]       |         [01;31m[K^~~~~~~~~[m[K
+[1.570s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:232:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglVertex2f[m[K’ was not declared in this scope
+[1.570s]   232 |         [01;31m[KglVertex2f[m[K(x, y);
+[1.570s]       |         [01;31m[K^~~~~~~~~~[m[K
+[1.572s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:235:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglColor3f[m[K’ was not declared in this scope
+[1.572s]   235 |         [01;31m[KglColor3f[m[K(0.0f, 0.0f, 1.0f);
+[1.572s]       |         [01;31m[K^~~~~~~~~[m[K
+[1.574s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:236:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglVertex2f[m[K’ was not declared in this scope
+[1.575s]   236 |         [01;31m[KglVertex2f[m[K(x, y);
+[1.575s]       |         [01;31m[K^~~~~~~~~~[m[K
+[1.576s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:240:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglEnd[m[K’ was not declared in this scope
+[1.576s]   240 |   [01;31m[KglEnd[m[K();
+[1.576s]       |   [01;31m[K^~~~~[m[K
+[1.579s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:241:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglutSwapBuffers[m[K’ was not declared in this scope
+[1.579s]   241 |   [01;31m[KglutSwapBuffers[m[K();
+[1.579s]       |   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.582s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K displayLoop[m[K()[m[K’:
+[1.582s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:248:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglClearColor[m[K’ was not declared in this scope
+[1.582s]   248 |   [01;31m[KglClearColor[m[K(1.0f, 1.0f, 1.0f, 1.0f);  // White background
+[1.582s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[1.584s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:249:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglPointSize[m[K’ was not declared in this scope
+[1.584s]   249 |   [01;31m[KglPointSize[m[K(20.0f);
+[1.585s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[1.587s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:250:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglutInit[m[K’ was not declared in this scope
+[1.587s]   250 |   [01;31m[KglutInit[m[K(&argc, argv);
+[1.587s]       |   [01;31m[K^~~~~~~~[m[K
+[1.589s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:251:23:[m[K [01;31m[Kerror: [m[K‘[01m[KGLUT_DOUBLE[m[K’ was not declared in this scope
+[1.589s]   251 |   glutInitDisplayMode([01;31m[KGLUT_DOUBLE[m[K | GLUT_RGB);
+[1.589s]       |                       [01;31m[K^~~~~~~~~~~[m[K
+[1.591s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:251:37:[m[K [01;31m[Kerror: [m[K‘[01m[KGLUT_RGB[m[K’ was not declared in this scope
+[1.591s]   251 |   glutInitDisplayMode(GLUT_DOUBLE | [01;31m[KGLUT_RGB[m[K);
+[1.591s]       |                                     [01;31m[K^~~~~~~~[m[K
+[1.595s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:251:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglutInitDisplayMode[m[K’ was not declared in this scope
+[1.595s]   251 |   [01;31m[KglutInitDisplayMode[m[K(GLUT_DOUBLE | GLUT_RGB);
+[1.595s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.598s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:252:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglutInitWindowSize[m[K’ was not declared in this scope
+[1.599s]   252 |   [01;31m[KglutInitWindowSize[m[K(600, 600);
+[1.599s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.602s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:253:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglutCreateWindow[m[K’ was not declared in this scope
+[1.602s]   253 |   [01;31m[KglutCreateWindow[m[K("2D SLAM Map");
+[1.602s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.604s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:254:16:[m[K [01;31m[Kerror: [m[K‘[01m[KGL_PROJECTION[m[K’ was not declared in this scope
+[1.604s]   254 |   glMatrixMode([01;31m[KGL_PROJECTION[m[K);
+[1.605s]       |                [01;31m[K^~~~~~~~~~~~~[m[K
+[1.607s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:254:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglMatrixMode[m[K’ was not declared in this scope
+[1.607s]   254 |   [01;31m[KglMatrixMode[m[K(GL_PROJECTION);
+[1.607s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[1.608s] [01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In member function ‘[01m[Kvoid NavigationNode::[01;32m[Ktimer_callback[m[K()[m[K’:
+[1.608s] [01m[K/root/ros2_ws/src/tp1/src/main.cpp:98:5:[m[K [01;31m[Kerror: [m[K‘[01m[KupdateMap[m[K’ was not declared in this scope
+[1.608s]    98 |     [01;31m[KupdateMap[m[K();
+[1.608s]       |     [01;31m[K^~~~~~~~~[m[K
+[1.609s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:255:17:[m[K [01;31m[Kerror: [m[K‘[01m[KMAP_SIZE[m[K’ was not declared in this scope
+[1.609s]   255 |   gluOrtho2D(0, [01;31m[KMAP_SIZE[m[K, 0, MAP_SIZE);
+[1.609s]       |                 [01;31m[K^~~~~~~~[m[K
+[1.611s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:255:3:[m[K [01;31m[Kerror: [m[K‘[01m[KgluOrtho2D[m[K’ was not declared in this scope
+[1.611s]   255 |   [01;31m[KgluOrtho2D[m[K(0, MAP_SIZE, 0, MAP_SIZE);
+[1.611s]       |   [01;31m[K^~~~~~~~~~[m[K
+[1.614s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:256:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglutDisplayFunc[m[K’ was not declared in this scope
+[1.614s]   256 |   [01;31m[KglutDisplayFunc[m[K(drawMap);
+[1.614s]       |   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.616s] [01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[1.616s] [01m[K/root/ros2_ws/src/tp1/src/main.cpp:163:55:[m[K [01;31m[Kerror: [m[K‘[01m[KdisplayLoop[m[K’ was not declared in this scope
+[1.616s]   163 |   pthread_create(&oglThread, NULL, (void *(*)(void *))[01;31m[KdisplayLoop[m[K, NULL);
+[1.616s]       |                                                       [01;31m[K^~~~~~~~~~~[m[K
+[1.617s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:257:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglutIdleFunc[m[K’ was not declared in this scope
+[1.617s]   257 |   [01;31m[KglutIdleFunc[m[K(drawMap);
+[1.617s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[1.619s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:258:3:[m[K [01;31m[Kerror: [m[K‘[01m[KglutMainLoop[m[K’ was not declared in this scope
+[1.620s]   258 |   [01;31m[KglutMainLoop[m[K();
+[1.620s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[2.003s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[2.003s] gmake[2]: *** Waiting for unfinished jobs....
+[3.340s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:76: CMakeFiles/navigation.dir/src/main.cpp.o] Error 1
+[3.340s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[3.340s] gmake: *** [Makefile:146: all] Error 2
+[3.342s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

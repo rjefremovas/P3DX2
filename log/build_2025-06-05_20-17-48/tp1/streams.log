@@ -1,0 +1,16 @@
+[0.142s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.220s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[2.058s] [01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In member function ‘[01m[Kvoid NavigationNode::[01;32m[Ktimer_callback[m[K()[m[K’:
+[2.058s] [01m[K/root/ros2_ws/src/tp1/src/main.cpp:122:36:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KSonars[m[K’ to ‘[01m[Kstd::vector<float>[m[K’
+[2.058s]   122 |     action_.avoidObstacles(lasers, [01;31m[Ksonars[m[K);
+[2.058s]       |                                    [01;31m[K^~~~~~[m[K
+[2.058s]       |                                    [01;31m[K|[m[K
+[2.058s]       |                                    [01;31m[KSonars[m[K
+[2.058s] In file included from [01m[K/root/ros2_ws/src/tp1/src/main.cpp:14[m[K:
+[2.058s] [01m[K/root/ros2_ws/src/tp1/include/Action.h:24:71:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid Action::[01;32m[KavoidObstacles[m[K(std::vector<float>, std::vector<float>)[m[K’
+[2.058s]    24 |     void avoidObstacles(std::vector<float> lasers, [01;36m[Kstd::vector<float> sonars[m[K);
+[2.058s]       |                                                    [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.498s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:76: CMakeFiles/navigation.dir/src/main.cpp.o] Error 1
+[4.498s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[4.499s] gmake: *** [Makefile:146: all] Error 2
+[4.501s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

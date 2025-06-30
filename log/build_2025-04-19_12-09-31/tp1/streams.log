@@ -1,0 +1,31 @@
+[0.010s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.099s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.255s] -- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.433s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.442s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.456s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.472s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.546s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.549s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.793s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.994s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.106s] [31mCMake Error at CMakeLists.txt:17 (find_package):
+[2.106s]   By not providing "FindTorch.cmake" in CMAKE_MODULE_PATH this project has
+[2.107s]   asked CMake to find a package configuration file provided by "Torch", but
+[2.107s]   CMake did not find one.
+[2.107s] 
+[2.107s]   Could not find a package configuration file provided by "Torch" with any of
+[2.107s]   the following names:
+[2.107s] 
+[2.107s]     TorchConfig.cmake
+[2.107s]     torch-config.cmake
+[2.107s] 
+[2.107s]   Add the installation prefix of "Torch" to CMAKE_PREFIX_PATH or set
+[2.107s]   "Torch_DIR" to a directory containing one of the above files.  If "Torch"
+[2.107s]   provides a separate development package or SDK, be sure it has been
+[2.107s]   installed.
+[2.107s] 
+[2.107s] [0m
+[2.107s] -- Configuring incomplete, errors occurred!
+[2.111s] gmake: *** [Makefile:348: cmake_check_build_system] Error 1
+[2.113s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

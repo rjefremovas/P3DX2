@@ -1,0 +1,10 @@
+[0.016s] Invoking command in '/root/ros2_ws/src/tp1/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/ros2_ws/src/tp1 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/tp1/install/tp1
+[0.327s] -- The C compiler identification is GNU 13.3.0
+[1.062s] -- The CXX compiler identification is GNU 13.3.0
+[1.699s] -- Detecting C compiler ABI info
+[1.945s] -- Detecting C compiler ABI info - done
+[1.951s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.952s] -- Detecting C compile features
+[1.953s] -- Detecting C compile features - done
+[2.052s] -- Detecting CXX compiler ABI info
+[2.130s] Invoked command in '/root/ros2_ws/src/tp1/build/tp1' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/ros2_ws/src/tp1 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/tp1/install/tp1

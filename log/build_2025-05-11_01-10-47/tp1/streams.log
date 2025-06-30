@@ -1,0 +1,15 @@
+[0.137s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.184s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[1.560s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(float, float)[m[K’:
+[1.560s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:345:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kmap[m[K’?
+[1.560s]   345 |         int ex = [01;31m[Kmap_x[m[K + int((r * cos(angle)) / RESOLUTION);
+[1.560s]       |                  [01;31m[K^~~~~[m[K
+[1.560s]       |                  [32m[Kmap[m[K
+[1.565s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:346:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_y[m[K’ was not declared in this scope; did you mean ‘[01m[Kmap[m[K’?
+[1.565s]   346 |         int ey = [01;31m[Kmap_y[m[K + int((r * sin(angle)) / RESOLUTION);
+[1.565s]       |                  [01;31m[K^~~~~[m[K
+[1.565s]       |                  [32m[Kmap[m[K
+[1.942s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[1.942s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[1.943s] gmake: *** [Makefile:146: all] Error 2
+[1.944s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

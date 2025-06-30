@@ -1,0 +1,8 @@
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(float, float)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:256:72:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  256 |         tf2::Quaternion tf_quat[34m[K([m[Krobot_x, robot_y, 0.0f, sin(angle/2.0f)[01;31m[K;[m[K
+      |                                [34m[K~[m[K                                       [01;31m[K^[m[K
+      |                                                                        [32m[K)[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

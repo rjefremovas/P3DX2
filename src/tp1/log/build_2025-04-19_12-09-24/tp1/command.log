@@ -1,0 +1,2 @@
+Invoking command in '/root/ros2_ws/src/tp1/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/ros2_ws/src/tp1 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/tp1/install/tp1
+Invoked command in '/root/ros2_ws/src/tp1/build/tp1' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/ros2_ws/src/tp1 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/tp1/install/tp1

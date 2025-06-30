@@ -1,0 +1,23 @@
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(float, float)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:276:85:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std_msgs::msg::Header_<std::allocator<void> >::_stamp_type = struct builtin_interfaces::msg::Time_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct builtin_interfaces::msg::Time_<std::allocator<void> >[m[K’} has no member named ‘[01m[Knsec[m[K’; did you mean ‘[01m[Ksec[m[K’?
+  276 |     double current_time_seconds = laserROS.header.stamp.sec + laserROS.header.stamp.[01;31m[Knsec[m[K * 1e-9;
+      |                                                                                     [01;31m[K^~~~[m[K
+      |                                                                                     [32m[Ksec[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:279:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_nanoseconds[m[K’ was not declared in this scope
+  279 |     if ([01;31m[Klast_nanoseconds[m[K != 0) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:336:25:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  336 | void Perception::drawMap[01;31m[K([m[K)
+      |                         [01;31m[K^[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:363:29:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  363 | void Perception::displayLoop[01;31m[K([m[K)
+      |                             [01;31m[K^[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:378:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  378 | }
+      |  [01;31m[K^[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:232:3:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  232 |   [01;36m[K{[m[K
+      |   [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

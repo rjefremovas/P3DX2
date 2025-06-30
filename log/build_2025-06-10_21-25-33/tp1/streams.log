@@ -1,0 +1,39 @@
+[0.156s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.237s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[0.238s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Action.cpp.o[0m
+[0.565s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:[m[K In member function ‘[01m[Kvoid Action::[01;32m[KkeepAsFarthestAsPossibleFromWalls[m[K(std::vector<float>, std::vector<float>)[m[K’:
+[0.565s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:49:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klasers[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.565s]    49 | void Action::keepAsFarthestAsPossibleFromWalls([01;35m[Kstd::vector<float> lasers[m[K, std::vector<float> sonars)
+[0.565s]       |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[0.565s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:49:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksonars[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.565s]    49 | void Action::keepAsFarthestAsPossibleFromWalls(std::vector<float> lasers, [01;35m[Kstd::vector<float> sonars[m[K)
+[0.566s]       |                                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[2.022s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(Sonars)[m[K’:
+[2.022s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:294:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[2.022s]   294 |           map[px][py] = map[px][py]
+[2.022s]       |                                    [01;31m[K^[m[K
+[2.022s]       |                                    [32m[K;[m[K
+[2.022s]   295 |         [32m[K}[m[K else if ( v == raio){
+[2.022s]       |         [32m[K~[m[K                           
+[2.022s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:296:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[2.023s]   296 |           map[px][py] = map[px][py] + 3
+[2.023s]       |                                        [01;31m[K^[m[K
+[2.023s]       |                                        [32m[K;[m[K
+[2.023s]   297 |         [32m[K}[m[K else if (px > 0 && py > 0) {
+[2.023s]       |         [32m[K~[m[K                               
+[2.023s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:298:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[2.023s]   298 |           map[px][py] = map[px][py] - 1
+[2.023s]       |                                        [01;31m[K^[m[K
+[2.023s]       |                                        [32m[K;[m[K
+[2.023s]   299 |         [32m[K}[m[K
+[2.023s]       |         [32m[K~[m[K                               
+[2.023s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:300:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_px[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.023s]   300 |         int [01;35m[Klast_px[m[K = px;
+[2.023s]       |             [01;35m[K^~~~~~~[m[K
+[2.023s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:301:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_py[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.023s]   301 |         int [01;35m[Klast_py[m[K = py;
+[2.023s]       |             [01;35m[K^~~~~~~[m[K
+[2.516s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[2.516s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[2.516s] gmake: *** [Makefile:146: all] Error 2
+[2.519s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

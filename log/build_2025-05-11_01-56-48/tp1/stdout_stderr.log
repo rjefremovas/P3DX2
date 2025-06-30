@@ -1,0 +1,10 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(float, float)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:260:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_change[m[K’ was not declared in this scope
+  260 |           [01;31m[Kangular_change[m[K = angVel * 57.2957835f * (PI / 180.0f) * delta_time; // Change in yaw
+      |           [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

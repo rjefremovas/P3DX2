@@ -1,0 +1,8 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kcmath.h: No such file or directory
+    7 | #include [01;31m[K<cmath.h>[m[K
+      |          [01;31m[K^~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

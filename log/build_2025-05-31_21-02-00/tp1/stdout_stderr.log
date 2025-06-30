@@ -1,0 +1,14 @@
+[ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In member function ‘[01m[Kvoid NavigationNode::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:129:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPerception::updateMap(geometry_msgs::msg::Vector3_<std::allocator<void> >::_x_type&, geometry_msgs::msg::Vector3_<std::allocator<void> >::_z_type&, std::vector<float>&)[m[K’
+  129 |     [01;31m[Kperception_.updateMap(twistROS.linear.x, twistROS.angular.z, sonars)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/root/ros2_ws/src/tp1/src/main.cpp:15[m[K:
+[01m[K/root/ros2_ws/src/tp1/include/Perception.h:21:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(std::vector<float>)[m[K’
+   21 |     void [01;36m[KupdateMap[m[K(std::vector<float> sonars);
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/include/Perception.h:21:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:76: CMakeFiles/navigation.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

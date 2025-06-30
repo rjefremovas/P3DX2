@@ -1,0 +1,36 @@
+[0.133s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.178s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[1.624s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(std::vector<float, std::allocator<float> >&, std::vector<float, std::allocator<float> >&)[m[K’:
+[1.624s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:221:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klasers[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.624s]   221 | void Perception::updateMap([01;35m[Kstd::vector<float> &lasers[m[K,std::vector<float> &pose)
+[1.624s]       |                            [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.624s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:221:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.624s]   221 | void Perception::updateMap(std::vector<float> &lasers,[01;35m[Kstd::vector<float> &pose[m[K)
+[1.624s]       |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.136s] [ 40%] [32m[1mLinking CXX executable navigation[0m
+[2.464s] [100%] Built target navigation
+[2.473s] Invoked command in '/root/ros2_ws/build/tp1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[2.474s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --install /root/ros2_ws/build/tp1
+[2.478s] -- Install configuration: ""
+[2.478s] -- Installing: /root/ros2_ws/install/tp1/lib/tp1/navigation
+[2.486s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/tp1/lib/tp1/navigation" to ""
+[2.486s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/launch
+[2.487s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/launch/p3dx-rosaria.launch.py
+[2.487s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/config
+[2.487s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/config/p3dx.rviz
+[2.487s] -- Up-to-date: /root/ros2_ws/install/tp1/share/ament_index/resource_index/package_run_dependencies/tp1
+[2.487s] -- Up-to-date: /root/ros2_ws/install/tp1/share/ament_index/resource_index/parent_prefix_path/tp1
+[2.487s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/environment/ament_prefix_path.sh
+[2.488s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/environment/ament_prefix_path.dsv
+[2.488s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/environment/path.sh
+[2.488s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/environment/path.dsv
+[2.488s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/local_setup.bash
+[2.488s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/local_setup.sh
+[2.488s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/local_setup.zsh
+[2.488s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/local_setup.dsv
+[2.489s] -- Installing: /root/ros2_ws/install/tp1/share/tp1/package.dsv
+[2.489s] -- Up-to-date: /root/ros2_ws/install/tp1/share/ament_index/resource_index/packages/tp1
+[2.489s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/cmake/tp1Config.cmake
+[2.490s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/cmake/tp1Config-version.cmake
+[2.490s] -- Up-to-date: /root/ros2_ws/install/tp1/share/tp1/package.xml
+[2.490s] Invoked command in '/root/ros2_ws/build/tp1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --install /root/ros2_ws/build/tp1

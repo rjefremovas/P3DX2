@@ -1,0 +1,13 @@
+[01m[K/root/ros2_ws/src/tp1/src/Action.cpp:[m[K In member function ‘[01m[Kvoid Action::[01;32m[KavoidObstacles[m[K(std::vector<float>, std::vector<float>)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Action.cpp:16:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kif[m[K’
+   16 |     std::cout << "123" << sonars[0]
+      |                                    [01;31m[K^[m[K
+      |                                    [32m[K;[m[K
+   17 |     [32m[Kif[m[K ( *result < 0.8 && std::distance(lasers.begin(), result) <= 90  ){
+      |     [32m[K~~[m[K                              
+[01m[K/root/ros2_ws/src/tp1/src/Action.cpp:19:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+   19 |     } [01;31m[Kelse[m[K if  ( *result < 0.8 && std::distance(lasers.begin(), result) > 90  ) {
+      |       [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:90: CMakeFiles/navigation.dir/src/Action.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

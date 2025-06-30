@@ -1,0 +1,7 @@
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kstd::vector<float, std::allocator<float> > Perception::[01;32m[KupdateMap[m[K(Sonars)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:288:61:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kstd::vector<float, std::allocator<float> >[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  288 |     if (laserROS.ranges.empty() || laserROS.ranges.empty()) [01;31m[Kreturn[m[K;
+      |                                                             [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

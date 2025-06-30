@@ -1,0 +1,18 @@
+[0.133s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.222s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[2.002s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(float, float)[m[K’:
+[2.002s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:232:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+[2.002s]   232 |     for (size_t m = 0; [01;31m[Ki[m[K < MAP_SIZE; ++i) {
+[2.002s]       |                        [01;31m[K^[m[K
+[2.008s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:302:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmx[m[K’ was not declared in this scope; did you mean ‘[01m[Kkx[m[K’?
+[2.008s]   302 |             [01;31m[Kmx[m[K = cx + int((r * cos(angle)*v) / RESOLUTION);
+[2.008s]       |             [01;31m[K^~[m[K
+[2.008s]       |             [32m[Kkx[m[K
+[2.013s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:303:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy[m[K’ was not declared in this scope; did you mean ‘[01m[Kky[m[K’?
+[2.013s]   303 |             [01;31m[Kmy[m[K = cy + int((r * sin(angle)*v) / RESOLUTION);
+[2.013s]       |             [01;31m[K^~[m[K
+[2.013s]       |             [32m[Kky[m[K
+[2.412s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[2.412s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[2.412s] gmake: *** [Makefile:146: all] Error 2
+[2.414s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

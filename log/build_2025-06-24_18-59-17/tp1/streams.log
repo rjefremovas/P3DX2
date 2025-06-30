@@ -1,0 +1,12 @@
+[0.143s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.217s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[1.946s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:692:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstatic void Perception::[01;32m[KdisplayLoop[m[K()[m[K’
+[1.946s]   692 | void [01;31m[KPerception[m[K::displayLoop(){
+[1.946s]       |      [01;31m[K^~~~~~~~~~[m[K
+[1.946s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:661:6:[m[K [01;36m[Knote: [m[K‘[01m[Kstatic void Perception::[01;32m[KdisplayLoop[m[K()[m[K’ previously defined here
+[1.946s]   661 | void [01;36m[KPerception[m[K::displayLoop()
+[1.947s]       |      [01;36m[K^~~~~~~~~~[m[K
+[2.430s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[2.431s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[2.431s] gmake: *** [Makefile:146: all] Error 2
+[2.433s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

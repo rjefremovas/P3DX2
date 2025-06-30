@@ -1,0 +1,20 @@
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(Sonars)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:293:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kalpha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  293 |             float [01;35m[Kalpha[m[K = angle - sonars.angle[k]+yaw;
+      |                   [01;35m[K^~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:295:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kalpha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  295 |             float [01;35m[Kalpha[m[K = sonars.angle[k]+yaw - angle;
+      |                   [01;35m[K^~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:303:82:[m[K [01;31m[Kerror: [m[K‘[01m[Kalpha[m[K’ was not declared in this scope; did you mean ‘[01m[Kisalpha[m[K’?
+  303 |             float p_occupied = ((MAX_RANGE-laserROS.ranges[i])/MAX_RANGE + (BETA-[01;31m[Kalpha[m[K)/BETA)/2;
+      |                                                                                  [01;31m[K^~~~~[m[K
+      |                                                                                  [32m[Kisalpha[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:307:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kmap[m[K’
+  307 |             [01;31m[Kmap[m[K[lx][ly] = new_occupied;
+      |             [01;31m[K^~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:306:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_occupied[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  306 |             float [01;35m[Knew_occupied[m[K = map[lx][ly]*p_occupied/(p_occupied*map[lx][ly] + (1-map[lx][ly])*p_empty)
+      |                   [01;35m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

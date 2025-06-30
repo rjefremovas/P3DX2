@@ -1,0 +1,13 @@
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(float, float)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:239:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan_msg[m[K’ was not declared in this scope
+  239 |     float time_seconds = float(static_cast<double>([01;31m[Kscan_msg[m[K->header.stamp.sec) + static_cast<double>(scan_msg->header.stamp.nsec) * 1e-9);
+      |                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:240:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdiff3[m[K’ was not declared in this scope
+  240 |     [01;31m[Kdiff3[m[K = time_seconds - nanoaux;
+      |     [01;31m[K^~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:276:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksecaux[m[K’ was not declared in this scope
+  276 |     [01;31m[Ksecaux[m[K  = laserROS.header.stamp.sec - secaux;
+      |     [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

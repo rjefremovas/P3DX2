@@ -1,0 +1,16 @@
+[0.138s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.184s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[1.566s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(float, float)[m[K’:
+[1.566s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:239:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan_msg[m[K’ was not declared in this scope
+[1.566s]   239 |     float time_seconds = float(static_cast<double>([01;31m[Kscan_msg[m[K->header.stamp.sec) + static_cast<double>(scan_msg->header.stamp.nsec) * 1e-9);
+[1.566s]       |                                                    [01;31m[K^~~~~~~~[m[K
+[1.571s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:240:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdiff3[m[K’ was not declared in this scope
+[1.571s]   240 |     [01;31m[Kdiff3[m[K = time_seconds - nanoaux;
+[1.571s]       |     [01;31m[K^~~~~[m[K
+[1.577s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:276:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksecaux[m[K’ was not declared in this scope
+[1.577s]   276 |     [01;31m[Ksecaux[m[K  = laserROS.header.stamp.sec - secaux;
+[1.577s]       |     [01;31m[K^~~~~~[m[K
+[1.964s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[1.964s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[1.965s] gmake: *** [Makefile:146: all] Error 2
+[1.966s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

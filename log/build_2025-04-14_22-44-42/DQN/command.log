@@ -1,0 +1,2 @@
+Invoking command in '/root/ros2_ws/build/DQN': /usr/bin/cmake /root/ros2_ws/src/dqn -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/DQN
+Invoked command in '/root/ros2_ws/build/DQN' returned '1': /usr/bin/cmake /root/ros2_ws/src/dqn -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/DQN

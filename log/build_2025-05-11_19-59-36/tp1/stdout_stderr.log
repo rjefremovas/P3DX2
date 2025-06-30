@@ -1,0 +1,20 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:453:7:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kfloat Perception::[01;32m[KcompareSubmaps[m[K(const std::vector<int>&, const std::vector<int>&)[m[K’
+  453 | float [01;31m[KPerception[m[K::compareSubmaps(const std::vector<int>& submap1, const std::vector<int>& submap2)
+      |       [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:1[m[K:
+[01m[K/root/ros2_ws/src/tp1/include/Perception.h:30:21:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kstd::vector<int> Perception::[01;32m[KcompareSubmaps[m[K(const std::vector<int>&, const std::vector<int>&)[m[K’
+   30 |     std::vector<int>[01;36m[KcompareSubmaps[m[K(const std::vector<int>& submap1, const std::vector<int>& submap2);
+      |                     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/include/Perception.h:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Perception[m[K’ defined here
+    9 | class [01;36m[KPerception[m[K
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KdetectLoopClosure[m[K()[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:480:42:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::vector<int>[m[K’ to ‘[01m[Kfloat[m[K’ in initialization
+  480 |         float similarity = [01;31m[KcompareSubmaps(current_submap, submaps[i])[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                          [01;31m[K|[m[K
+      |                                          [01;31m[Kstd::vector<int>[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

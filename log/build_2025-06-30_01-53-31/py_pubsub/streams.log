@@ -1,0 +1,21 @@
+[0.594s] Invoking command in '/root/ros2_ws/src/py_pubsub': PYTHONPATH=/root/ros2_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /root/ros2_ws/build/py_pubsub/build install --record /root/ros2_ws/build/py_pubsub/install.log --single-version-externally-managed install_data
+[0.805s] running egg_info
+[0.817s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[0.817s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[0.817s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[0.817s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[0.817s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[0.849s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.849s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.849s] running build
+[0.849s] running build_py
+[0.850s] running install
+[0.854s] running install_lib
+[0.868s] running install_data
+[0.868s] running install_egg_info
+[0.881s] removing '/root/ros2_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub-0.0.0-py3.12.egg-info' (and everything under it)
+[0.882s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /root/ros2_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub-0.0.0-py3.12.egg-info
+[0.883s] running install_scripts
+[0.977s] Installing listener script to /root/ros2_ws/install/py_pubsub/lib/py_pubsub
+[0.978s] writing list of installed files to '/root/ros2_ws/build/py_pubsub/install.log'
+[1.000s] Invoked command in '/root/ros2_ws/src/py_pubsub' returned '0': PYTHONPATH=/root/ros2_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /root/ros2_ws/build/py_pubsub/build install --record /root/ros2_ws/build/py_pubsub/install.log --single-version-externally-managed install_data

@@ -1,0 +1,18 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(float, float)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:327:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope; did you mean ‘[01m[Kjn[m[K’?
+  327 |         int w_robot = int(cy + ([01;31m[Kj[m[K/RESOLUTION));
+      |                                 [01;31m[K^[m[K
+      |                                 [32m[Kjn[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:328:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  328 |         int l_robot = int(cx + ([01;31m[Ki[m[K/RESOLUTION));
+      |                                 [01;31m[K^[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:230:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  230 | void Perception::updateMap([01;35m[Kfloat vel[m[K,float angVel)
+      |                            [01;35m[K~~~~~~^~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:230:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KangVel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  230 | void Perception::updateMap(float vel,[01;35m[Kfloat angVel[m[K)
+      |                                      [01;35m[K~~~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

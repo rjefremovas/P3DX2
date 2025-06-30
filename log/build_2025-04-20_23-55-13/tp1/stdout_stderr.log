@@ -1,0 +1,8 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Action.cpp.o[0m
+[ 40%] [32m[1mLinking CXX executable navigation[0m
+/usr/bin/ld: CMakeFiles/navigation.dir/src/main.cpp.o: in function `NavigationNode::timer_callback()':
+main.cpp:(.text._ZN14NavigationNode14timer_callbackEv[_ZN14NavigationNode14timer_callbackEv]+0x347): undefined reference to `Action::keepAsFarthestAsPossibleFromWalls(std::vector<float, std::allocator<float> >, std::vector<float, std::allocator<float> >)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:234: navigation] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

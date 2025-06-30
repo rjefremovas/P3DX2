@@ -1,0 +1,15 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(std::vector<float, std::allocator<float> >&, std::vector<float, std::allocator<float> >&)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:244:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std_msgs::msg::Header_<std::allocator<void> >::_stamp_type = struct builtin_interfaces::msg::Time_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct builtin_interfaces::msg::Time_<std::allocator<void> >[m[K’} has no member named ‘[01m[Knsec[m[K’; did you mean ‘[01m[Ksec[m[K’?
+  244 |     aux = laserROS.header.stamp.[01;31m[Knsec[m[K;
+      |                                 [01;31m[K^~~~[m[K
+      |                                 [32m[Ksec[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:221:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klasers[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  221 | void Perception::updateMap([01;35m[Kstd::vector<float> &lasers[m[K,std::vector<float> &pose)
+      |                            [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:221:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  221 | void Perception::updateMap(std::vector<float> &lasers,[01;35m[Kstd::vector<float> &pose[m[K)
+      |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

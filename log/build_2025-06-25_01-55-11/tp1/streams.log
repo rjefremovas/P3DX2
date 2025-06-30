@@ -1,0 +1,32 @@
+[0.164s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.239s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Action.cpp.o[0m
+[0.239s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[0.565s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:14:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Action::[01;32m[KavoidObstacles[m[K(float, float)[m[K’
+[0.565s]    14 | void [01;31m[KAction[m[K::avoidObstacles(float lin, float ang)
+[0.566s]       |      [01;31m[K^~~~~~[m[K
+[0.566s] In file included from [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:1[m[K:
+[0.566s] [01m[K/root/ros2_ws/src/tp1/include/Action.h:24:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Action::[01;32m[KavoidObstacles[m[K(std::vector<float>)[m[K’
+[0.566s]    24 |     void [01;36m[KavoidObstacles[m[K(std::vector<float> speed);
+[0.566s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[0.566s] [01m[K/root/ros2_ws/src/tp1/include/Action.h:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Action[m[K’ defined here
+[0.566s]    18 | class [01;36m[KAction[m[K
+[0.566s]       |       [01;36m[K^~~~~~[m[K
+[0.567s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:[m[K In member function ‘[01m[Kvoid Action::[01;32m[KkeepAsFarthestAsPossibleFromWalls[m[K(std::vector<float>, std::vector<float>)[m[K’:
+[0.567s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:52:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klasers[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.567s]    52 | void Action::keepAsFarthestAsPossibleFromWalls([01;35m[Kstd::vector<float> lasers[m[K, std::vector<float> sonars)
+[0.567s]       |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[0.567s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:52:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksonars[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.567s]    52 | void Action::keepAsFarthestAsPossibleFromWalls(std::vector<float> lasers, [01;35m[Kstd::vector<float> sonars[m[K)
+[0.567s]       |                                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[0.613s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:90: CMakeFiles/navigation.dir/src/Action.cpp.o] Error 1
+[0.613s] gmake[2]: *** Waiting for unfinished jobs....
+[2.008s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kstd::vector<float, std::allocator<float> > Perception::[01;32m[KupdateMap[m[K(Sonars)[m[K’:
+[2.008s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:650:12:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kspeed[m[K’ from ‘[01m[Kfloat [2][m[K’ to ‘[01m[Kstd::vector<float, std::allocator<float> >[m[K’
+[2.008s]   650 |     return [01;31m[Kspeed[m[K;
+[2.008s]       |            [01;31m[K^~~~~[m[K
+[2.008s]       |            [01;31m[K|[m[K
+[2.008s]       |            [01;31m[Kfloat [2][m[K
+[2.486s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[2.486s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[2.486s] gmake: *** [Makefile:146: all] Error 2
+[2.489s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

@@ -1,0 +1,19 @@
+[0.130s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.179s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[1.563s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kvoid Perception::[01;32m[KupdateMap[m[K(float, float)[m[K’:
+[1.563s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:323:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kw_robot[m[K’ was not declared in this scope
+[1.563s]   323 |     [01;31m[Kw_robot[m[K = cy + (0.45f/RESOLUTION);
+[1.563s]       |     [01;31m[K^~~~~~~[m[K
+[1.569s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:324:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kl_robot[m[K’ was not declared in this scope
+[1.569s]   324 |     [01;31m[Kl_robot[m[K = cx + (0.38f/RESOLUTION);
+[1.569s]       |     [01;31m[K^~~~~~~[m[K
+[1.569s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:230:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.569s]   230 | void Perception::updateMap([01;35m[Kfloat vel[m[K,float angVel)
+[1.569s]       |                            [01;35m[K~~~~~~^~~[m[K
+[1.569s] [01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:230:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KangVel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.569s]   230 | void Perception::updateMap(float vel,[01;35m[Kfloat angVel[m[K)
+[1.569s]       |                                      [01;35m[K~~~~~~^~~~~~[m[K
+[1.953s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+[1.953s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[1.954s] gmake: *** [Makefile:146: all] Error 2
+[1.955s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws/install/py_pubsub:/root/ros2_ws/src/py_pubsub/install/py_pubsub:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16

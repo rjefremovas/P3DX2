@@ -1,0 +1,43 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Perception.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/main.cpp.o[0m
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:127:44:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+  127 | void receivePose(const geometry_msgs::msg::[01;31m[KPoseStamped[m[K::SharedPtr &value)
+      |                                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:127:67:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  127 | void receivePose(const geometry_msgs::msg::PoseStamped::SharedPtr [01;31m[K&[m[Kvalue)
+      |                                                                   [01;31m[K^[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:127:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+  127 | void receivePose[34m[K([m[Kconst geometry_msgs::msg::PoseStamped::SharedPtr[01;31m[K [m[K[32m[K&[m[Kvalue)
+      |                 [34m[K~[m[K                                                [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                  [32m[K)[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:127:68:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kvalue[m[K’
+  127 | void receivePose(const geometry_msgs::msg::PoseStamped::SharedPtr &[01;31m[Kvalue[m[K)
+      |                                                                    [01;31m[K^~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kstd::vector<float, std::allocator<float> > Perception::[01;32m[KgetLatestSonarRanges[m[K()[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:153:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knumbytes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  153 |     int [01;35m[Knumbytes[m[K = sonarROS.data.size();
+      |         [01;35m[K^~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:154:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knumfields[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  154 |     int [01;35m[Knumfields[m[K = sonarROS.fields.size();
+      |         [01;35m[K^~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:[m[K In member function ‘[01m[Kstd::vector<float, std::allocator<float> > Perception::[01;32m[KgetLatestPose[m[K()[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/Perception.cpp:178:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  178 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:104: CMakeFiles/navigation.dir/src/Perception.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In constructor ‘[01m[KNavigationNode::[01;32m[KNavigationNode[m[K(Action&, Perception&)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_pose[m[K’ was not declared in this scope
+   30 |     [01;31m[Ksub_pose[m[K = this->create_subscription<geometry_msgs::msg::Pose>("/pose", 100,
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In function ‘[01m[Kvoid*[01;32m[K keyboardThreadFunction[m[K(void*)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:86:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   86 | void *keyboardThreadFunction([01;35m[Kvoid *arg[m[K)
+      |                              [01;35m[K~~~~~~^~~[m[K
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:[m[K In function ‘[01m[Kvoid*[01;32m[K mainThreadFunction[m[K(void*)[m[K’:
+[01m[K/root/ros2_ws/src/tp1/src/main.cpp:100:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  100 | void *mainThreadFunction([01;35m[Kvoid *arg[m[K)
+      |                          [01;35m[K~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/navigation.dir/build.make:76: CMakeFiles/navigation.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

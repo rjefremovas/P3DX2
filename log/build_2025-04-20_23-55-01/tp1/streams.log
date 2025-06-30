@@ -1,0 +1,16 @@
+[0.008s] Invoking command in '/root/ros2_ws/build/tp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
+[0.044s] [ 20%] [32mBuilding CXX object CMakeFiles/navigation.dir/src/Action.cpp.o[0m
+[0.244s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:[m[K In member function ‘[01m[Kvoid Action::[01;32m[KavoidObstacles[m[K(std::vector<float>, std::vector<float>)[m[K’:
+[0.244s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:16:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kif[m[K’
+[0.244s]    16 |     std::cout << "123" << sonars[0]
+[0.244s]       |                                    [01;31m[K^[m[K
+[0.244s]       |                                    [32m[K;[m[K
+[0.244s]    17 |     [32m[Kif[m[K ( *result < 0.8 && std::distance(lasers.begin(), result) <= 90  ){
+[0.244s]       |     [32m[K~~[m[K                              
+[0.244s] [01m[K/root/ros2_ws/src/tp1/src/Action.cpp:19:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+[0.244s]    19 |     } [01;31m[Kelse[m[K if  ( *result < 0.8 && std::distance(lasers.begin(), result) > 90  ) {
+[0.244s]       |       [01;31m[K^~~~[m[K
+[0.279s] gmake[2]: *** [CMakeFiles/navigation.dir/build.make:90: CMakeFiles/navigation.dir/src/Action.cpp.o] Error 1
+[0.279s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigation.dir/all] Error 2
+[0.279s] gmake: *** [Makefile:146: all] Error 2
+[0.281s] Invoked command in '/root/ros2_ws/build/tp1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/tp1 -- -j16 -l16
