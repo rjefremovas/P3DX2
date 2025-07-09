@@ -528,7 +528,7 @@ std::vector<float> Perception::updateMap(Sonars sonars)
         for (auto [dr, dc] : directions) {
             int nr = r + dr, nc = c + dc;
             if (nr < 0 || nr >= MAP_SIZE || nc < 0 || nc >= MAP_SIZE) continue;
-            if (map2[nr][nc] >= 0.999f || map2[nr][nc] <= 0.05f) continue; // obstacle
+            if (map2[nr][nc] >= 0.9f || map2[nr][nc] <= 0.05f) continue; // obstacle
             float cost = map2[nr][nc] + 1; 
             if (dist[r][c] + cost < dist[nr][nc]) {
                 dist[nr][nc] = dist[r][c] + cost;
@@ -978,22 +978,25 @@ std::vector<float> Perception::updateMap(Sonars sonars)
     if (!path.empty()){
         float angle_to_target = std::atan2(target_cy-cy, target_cx-cx);
         float angle_diff = angle_to_target - yaw;
-        if (angle_diff >= 0){
-          if (angle_diff <= PI/4){
+        if (std::abs(angle_diff) < 1e-3) {  // facing target
             linSpeed = 0.3;
-            angSpeed = 0.3;
-          } else {
-            angSpeed = 0.3;
-            linSpeed = 0.0;
-          }
+            angSpeed = 0.0;
+        } else if (angle_diff > 0) {
+            if (angle_diff <= PI/6){
+                linSpeed = 0.3;
+                angSpeed = 0.3;
+            } else {
+                linSpeed = 0.0;
+                angSpeed = 0.3;
+            }
         } else {
-          if (angle_diff >= -1*PI/4){
-            linSpeed = 0.3;
-            angSpeed = -0.3;
-          } else {
-            angSpeed = -0.3;
-            linSpeed = 0.0;
-          }
+            if (angle_diff >= -PI/6){
+                linSpeed = 0.3;
+                angSpeed = -0.3;
+            } else {
+                linSpeed = 0.0;
+                angSpeed = -0.3;
+            }
         }
       
     }
