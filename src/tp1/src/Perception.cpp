@@ -10,19 +10,31 @@
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp> 
 #include <vector>
 #include <iostream>
+#include <queue>
+#include <limits>
+#include <rclcpp/rclcpp.hpp>
 
 
 
 
 
+// Dijkstra movimento
+int dx[] = {-1, 1, 0, 0};
+int dy[] = {0, 0, -1, 1};
+bool dijkstra = false;
 const int MAP_SIZE = 500;
 const float RESOLUTION = 0.1f;
-
+bool localGradientFound = false;
+bool inDijkstra = false;
+std::vector<Cell> path;
+int dijkstraCounter = 0;
+int localFailureCount = 0;
+const int LOCAL_FAILURE_THRESHOLD = 100;
 // Bayesian Map
 //float map[MAP_SIZE][MAP_SIZE] = {{0.5}};
 
 // ITERATIONS
-int MAX_ITERATIONS = 3;
+int MAX_ITERATIONS = 10;
 
 // Velocidades
 float linSpeed = 0.0;
@@ -277,7 +289,7 @@ Sonars Perception::getLatestSonarRanges()
 // Marca os pontos no mapa do laser e a posição absoluta no mapa
 std::vector<float> Perception::updateMap(Sonars sonars)
   {
-  
+    //std::cout << "Entrou de novo" << "\n";
     for (size_t m = 0; m < MAP_SIZE; m++) {
       for (size_t n = 0; n < MAP_SIZE; n++) {
         if (map[m][n] == -5 || map[m][n] == -6 ){
@@ -285,7 +297,7 @@ std::vector<float> Perception::updateMap(Sonars sonars)
         }
       }
     }
-  
+    //std::cout << "Entrou de novo2" << "\n";
     //std::cout << "nano segundos: " << nanoaux << std::endl;
     float x = latestPose[0];
     float y = latestPose[1];
@@ -296,8 +308,10 @@ std::vector<float> Perception::updateMap(Sonars sonars)
     // Potencial Harmonico
     bool converged = false;
     int inter = 0;
-    while ( !converged and inter <= MAX_ITERATIONS){
-      float max_diff = 0.0;
+    float max_diff = 0.0;
+    //std::cout << "Entrou de novo3" << "\n";
+    while ( !converged && inter <= MAX_ITERATIONS){
+      //std::cout << "Entrou de novo33" << "\n";
       inter ++;
       for (int a = cx - 2/RESOLUTION; a < cx + 2/RESOLUTION - 1; a++){
         for (int b = cy - 2/RESOLUTION; b < cy + 2/RESOLUTION - 1; b++){
@@ -321,32 +335,235 @@ std::vector<float> Perception::updateMap(Sonars sonars)
         converged = true;
       }
     }
+    //std::cout << "Entrou de novo4" << "\n";
+    /*
+    for (int a = 1; a < MAP_SIZE - 1; a++){
+        for (int b = 1; b < MAP_SIZE - 1; b++){
+          if (map2[a][b] >= 0 && map2[a][b] < 1){
+            float current_potential = map2[a][b];
+            float ps_n = map2[a+1][b];
+            float ps_s = map2[a-1][b];
+            float ps_w = map2[a][b-1];
+            float ps_e = map2[a][b+1];
+            float new_potential = ( ps_n + ps_s + ps_w + ps_e)/4.0;
+            float diff = std::abs(new_potential - current_potential);
+            
+            map2[a][b] = new_potential;
+            if (diff > max_diff) {
+              max_diff = diff;
+            }
+          }
+        }
+      }
+    */
+      //std::cout << "Entrou de novo5" << "\n";
     int gx = 0;
     int gy = 0;
-    float minVal = 1.0;
-    for (int a = cx - 1/RESOLUTION; a < cx + 1/RESOLUTION - 1; a++){
-        for (int b = cy - 1/RESOLUTION; b < cy + 1/RESOLUTION - 1; b++){
-            float ps_1 = map2[a-1][b+1];
-            float ps_2 = map2[a][b+1];
-            float ps_3 = map2[a+1][b+1];
-            float ps_4 = map2[a-1][b];
-            float ps_5 = map2[a][b];
-            float ps_6 = map2[a+1][b];
-            float ps_7 = map2[a-1][b-1];
-            float ps_8 = map2[a][b-1];
-            float ps_9 = map2[a+1][b-1];
-            float avg = (ps_1 + ps_2 + ps_3 + ps_4 + ps_5 + ps_6 + ps_7 + ps_8 + ps_9)/9;
-            if (avg < minVal && avg > 0){
-              float dist = std::sqrt((cx - a)*(cx - a) + (cy-b)*(cy-b));
-              if (dist <= 1.0){
-                minVal = map2[a][b];
+    float avg = 1.0;
+    float minVal = 1;
+    localGradientFound = false;
+    
+      for (int a = cx - 1/RESOLUTION; a < cx + 1/RESOLUTION - 1; a++){
+          for (int b = cy - 1/RESOLUTION; b < cy + 1/RESOLUTION - 1; b++){
+              float ps_1 = map2[a-1][b+1];
+              float ps_2 = map2[a][b+1];
+              float ps_3 = map2[a+1][b+1];
+              float ps_4 = map2[a-1][b];
+              float ps_5 = map2[a][b];
+              float ps_6 = map2[a+1][b];
+              float ps_7 = map2[a-1][b-1];
+              float ps_8 = map2[a][b-1];
+              float ps_9 = map2[a+1][b-1];
+              avg = (ps_1 + ps_2 + ps_3 + ps_4 + ps_5 + ps_6 + ps_7 + ps_8 + ps_9)/9;
+              
+            
+              if (avg < minVal && avg > 0.1 ){
+                float dist = std::sqrt((cx - a)*(cx - a) + (cy-b)*(cy-b));
+                if (dist <= 1.0){
+                  minVal = avg;
+                  gx = a;
+                  gy = b;
+                  if (avg < 0.8f){
+                    localGradientFound = true;
+                  }
+              }
+            }
+        }
+      }
+    
+    if (!localGradientFound) {
+        localFailureCount++;
+        RCLCPP_WARN(rclcpp::get_logger("Perception"), "Local gradient not found (%d/%d)", localFailureCount, LOCAL_FAILURE_THRESHOLD);
+        //std::cout << localFailureCount << "\n";
+    } else {
+        localFailureCount = 0;
+        //RCLCPP_INFO(rclcpp::get_logger("Perception"), "Local gradient found. Resetting failure counter.");
+    }
+    //std::cout << "Antes do Dijkstra" << "\n";
+    if (localFailureCount >= LOCAL_FAILURE_THRESHOLD && inDijkstra == false ){
+      RCLCPP_ERROR(rclcpp::get_logger("Perception"), "[FALLBACK] Local pathfinding failed. Triggering Dijkstra.");
+      localFailureCount = 0;
+      /*
+      for (int a = 1; a < MAP_SIZE - 31; a++){
+          for (int b = 1 ; b < MAP_SIZE - 31; b++){
+              int maxInC = -9999;
+              int minInC = 10000;
+              int maxInD = -9999;
+              int minInD = 10000;
+              for (int c = b; c < b+30; c++){
+                if (map2[a][c] > 0.95f){
+                  if (c > maxInC){
+                    maxInC = c;
+                  } 
+                  if (c < minInC){
+                    minInC = c;
+                  }
+                }
+              }
+              for (int d = a; d < a+30; d++){
+                if (map2[d][b] > 0.95f){
+                  
+                  if (d > maxInD){
+                    
+                    maxInD = d;
+                  } 
+                  if (d < minInD){
+                    minInD = d;
+                  }
+                }
+              }
+              
+              std::cout << "mininD " << minInD << "\n";
+              std::cout << "maxinD " << maxInD << "\n";
+              std::cout << "maxInC " << maxInC << "\n";
+              std::cout << "minInC " << minInC << "\n";
+              
+              std::cout << "a " << a << "\n";
+              std::cout << "b " << b << "\n";
+              
+              float ps_1 = map2[a-1][b+1];
+              float ps_2 = map2[a][b+1];
+              float ps_3 = map2[a+1][b+1];
+              float ps_4 = map2[a-1][b];
+              float ps_5 = map2[a][b];
+              float ps_6 = map2[a+1][b];
+              float ps_7 = map2[a-1][b-1];
+              float ps_8 = map2[a][b-1];
+              float ps_9 = map2[a+1][b-1];
+              float avg = (ps_1 + ps_2 + ps_3 + ps_4 + ps_5 + ps_6 + ps_7 + ps_8 + ps_9)/9;
+              if (avg < minVal && avg > 0.05 && avg < 0.95f && (( b > minInC && b < maxInC ) || ( a > minInD && a < maxInD ))){
+                minVal = avg;
                 gx = a;
                 gy = b;
             }
+        }
+      }
+      */
+
+      for (int a = 1; a < MAP_SIZE - 31; a++) {
+          for (int b = 1 ; b < MAP_SIZE - 31; b++) {
+              std::vector<int> obsC;
+              std::vector<int> obsD;
+              for (int c = b; c < b+30; c++) {
+                  if (map2[a][c] > 0.99f) obsC.push_back(c);
+              }
+              // Find all obstacle rows in column 'b'
+              for (int d = a; d < a+30; d++) {
+                  if (map2[d][b] > 0.99f) obsD.push_back(d);
+              }
+              
+              for (size_t i = 1; i < obsC.size(); i++) {
+                  int left = obsC[i-1];
+                  int right = obsC[i];
+                  for (int mid = left+1; mid < right; mid++) {
+                      float val = map2[a][mid];
+                      if (val < minVal && val > 0.1f && val < 0.95f) {
+                          minVal = val;
+                          gx = a;
+                          gy = mid;
+                      }
+                  }
+              }
+              
+              for (size_t i = 1; i < obsD.size(); i++) {
+                  int top = obsD[i-1];
+                  int bottom = obsD[i];
+                  for (int mid = top+1; mid < bottom; mid++) {
+                      float val = map2[mid][b];
+                      if (val < minVal && val > 0.1f && val < 0.95f) {
+                          minVal = val;
+                          gx = mid;
+                          gy = b;
+                      }
+                  }
+              }
           }
       }
+
+      Cell source = {cx, cy};
+      Cell dest   = {gx, gy};
+
+      float dist[MAP_SIZE][MAP_SIZE];
+      Cell parent[MAP_SIZE][MAP_SIZE];
+
+      for (int i = 0; i < MAP_SIZE; ++i){
+        for (int j = 0; j < MAP_SIZE; ++j) {
+            dist[i][j] = std::numeric_limits<float>::max();
+            parent[i][j] = {-1, -1};
+        }
+      }
+      dist[source.row][source.col] = 0.0f;
+      std::vector<std::pair<int, int>> directions = {{-1,0},{1,0},{0,-1},{0,1}};
+
+      typedef std::tuple<float, int, int> State;
+      std::priority_queue<State, std::vector<State>, std::greater<State>> pq;
+      pq.push({0.0f, source.row, source.col});
+
+
+      while (!pq.empty()) {
+        auto [d, r, c] = pq.top(); 
+        pq.pop();
+        if (d > dist[r][c]) continue;
+
+        for (auto [dr, dc] : directions) {
+            int nr = r + dr, nc = c + dc;
+            if (nr < 0 || nr >= MAP_SIZE || nc < 0 || nc >= MAP_SIZE) continue;
+            if (map2[nr][nc] >= 0.999f || map2[nr][nc] <= 0.05f) continue; // obstacle
+            float cost = map2[nr][nc] + 1; 
+            if (dist[r][c] + cost < dist[nr][nc]) {
+                dist[nr][nc] = dist[r][c] + cost;
+                parent[nr][nc] = {r, c};
+                pq.push({dist[nr][nc], nr, nc});
+            }
+        }
+      }
+      // Reconstruct path
+      
+      Cell at = dest;
+      if (dist[at.row][at.col] == std::numeric_limits<float>::max()) {
+          std::cout << "No path found!\n";
+      } else {
+          while (at.row != -1 && at.col != -1) {
+              path.push_back(at);
+              at = parent[at.row][at.col];
+          }
+          
+          std::reverse(path.begin(), path.end());
+          
+          std::cout << "Shortest path from (" << source.row << "," << source.col << ") to ("
+              << dest.row << "," << dest.col << "):\n";
+          for (auto cell : path) {
+              std::cout << "(" << cell.row << "," << cell.col << ") ";
+          }
+          
+          inDijkstra = true;
+          std::cout << "\nPath cost: " << dist[dest.row][dest.col] << std::endl;
+      }
+
     }
 
+    //std::cout << "Depois do Dijkstra" << "\n";
+    
     /*
     std::cout << "GX: " << gx << "\n";
     std::cout << "GY: " << gy << "\n";
@@ -364,25 +581,30 @@ std::vector<float> Perception::updateMap(Sonars sonars)
     normalized_diff -= PI;
     std::cout << "Normalized diff: " << normalized_diff << "\n";
     */
-
-    float angleGoal = std::atan2(gy - cy, gx - cx);
-    float angDiff = angleGoal - yaw;
-    if (angDiff >= 0){
-      if (angDiff <= PI/4){
-        linSpeed = 0.3;
-        angSpeed = 0.3;
+    //std::cout << "Antes do Angulo" << "\n";
+    if (gx != 0 && gy != 0 && inDijkstra == false){
+      float angleGoal = std::atan2(gy - cy, gx - cx);
+      float angDiff = angleGoal - yaw;
+      if (angDiff >= 0){
+        if (angDiff <= PI/4){
+          linSpeed = 0.3;
+          angSpeed = 0.3;
+        } else {
+          angSpeed = 0.3;
+          linSpeed = 0.0;
+        }
       } else {
-        angSpeed = 0.3;
-        linSpeed = 0.0;
+        if (angDiff >= -1*PI/4){
+          linSpeed = 0.3;
+          angSpeed = -0.3;
+        } else {
+          angSpeed = -0.3;
+          linSpeed = 0.0;
+        }
       }
-    } else {
-      if (angDiff >= -1*PI/4){
-        linSpeed = 0.3;
-        angSpeed = -0.3;
-      } else {
-        angSpeed = -0.3;
-        linSpeed = 0.0;
-      }
+    } else{
+      angSpeed = 0.0;
+      linSpeed = 0.0;
     }
     std::vector<float> speed;
     speed.resize(2);
@@ -390,7 +612,7 @@ std::vector<float> Perception::updateMap(Sonars sonars)
     speed[1] = angSpeed;
     // HIMM
     float raio;
-    for (int k=0; k < int(16); k++)
+    for (int k=0; k < int(8); k++)
     {
       raio = sonars.range[k];
       //std::cout << "sonar "<< k << ": " << sonars.range[k] << "\n";
@@ -400,7 +622,7 @@ std::vector<float> Perception::updateMap(Sonars sonars)
         int px = cx + int(((v) * cos(sonars.angle[k]+yaw)) / RESOLUTION);
         int py = cy + int(((v) * sin(sonars.angle[k]+yaw)) / RESOLUTION); 
          
-        if ( px != last_px && py != last_py && raio <= 2) {
+        if ( px != last_px && py != last_py && raio <= 3) {
           if ( v == raio){
             map[px][py] = map[px][py] + 3;
             map2[px][py] = 1;
@@ -427,7 +649,8 @@ std::vector<float> Perception::updateMap(Sonars sonars)
 
 
     }
-    
+    //std::cout << "Depois do Angulo" << "\n";
+
     // Bayesiana
     /*
     for (int k=0; k < int(8); k++)
@@ -590,7 +813,8 @@ std::vector<float> Perception::updateMap(Sonars sonars)
       }
     }
     */
-    
+    //std::cout << "Antes de desenhar o robo" << "\n";
+
     // Desenha o robô(é um retângulo)
     //comprimento é o X = 38cm
     //largura é o Y = 45cm
@@ -620,7 +844,7 @@ std::vector<float> Perception::updateMap(Sonars sonars)
       
     }
 
-    
+    //std::cout << "Depois de desenhar o robo" << "\n";
     
     // O que o robô pensa que tá fazendo
     /*
@@ -676,6 +900,110 @@ std::vector<float> Perception::updateMap(Sonars sonars)
     std::cout << "RMSE Y: " << rmse_y << std::endl;
     std::cout << "RMSE Y: " << rmse_yaw << std::endl;
     */
+    //std::cout << "Antes da lógica do Dijkstra angulo" << "\n";
+    if (dijkstraCounter > 100){
+      localFailureCount = 200;
+      dijkstraCounter = 0;
+      inDijkstra = false;
+      path.clear();
+
+    }
+    if (!path.empty() && minVal > 0.1 && map2[cx][cy] > 0.1f && map2[cx][cy] < 1.0f && inDijkstra == true) {
+    // Get robot's current position
+    std::cout << "[DEBUG] Dijkstra path was not cleared before update. Size = " << dijkstraPath.size() << "\n";
+    dijkstraCounter++;
+    
+    int target_cx =path.front().row;
+    int target_cy =path.front().col;
+    
+    /*
+    float target_x = (target_cx - MAP_SIZE / 2) * RESOLUTION;
+    float target_y = (target_cy - MAP_SIZE / 2) * RESOLUTION;
+    std::cout << target_x << "\n";
+    std::cout << target_y << "\n";
+    float dx = target_x - x;
+    float dy = target_y - y;
+    
+    float dist_to_target = std::sqrt(dx * dx + dy * dy);
+    */
+    float dist_to_target = std::sqrt(std::pow(target_cx - cx, 2) + std::pow(target_cy - cy, 2));
+    
+    // If robot is within 30cm of the target, pop it
+    
+    if (dist_to_target < 10.0f) {
+        /*
+        while(dist_to_target2 < 0.1f || !path.empty()){
+          path.erase(path.begin());
+          if (!path.empty()) {
+            int target_cx = path.front().row;
+            int target_cy = path.front().col;
+            dist_to_target2 = std::sqrt(std::pow(target_cx - cx, 2) + std::pow(target_cy - cy, 2));
+            std::cout << target_cx << " target_cx target_cy " << target_cy << "\n";
+          }
+          std::cout << target_cx << "\n";
+          std::cout << target_cy << "\n";
+          
+        }
+        */
+       while (!path.empty()) {
+          std::cout << std::endl;
+          int target_cx = path.front().row;
+          int target_cy = path.front().col;
+          float dist_to_target2 = std::sqrt(std::pow(target_cx - cx, 2) + std::pow(target_cy - cy, 2));
+          //std::cout << target_cx << " target_cx target_cy " << target_cy << "\n";
+          //std::cout << dist_to_target << "dist_to_target" << "\n";
+          // If close enough, pop and continue to the next point
+          if (dist_to_target2 < 10.0f) {
+              path.erase(path.begin());
+          } else {
+              // Not close to next point; stop popping.
+              break;
+          }
+      }
+       if (path.empty()) {
+          localFailureCount = 0;
+          linSpeed = 0.0f;
+          angSpeed = 0.0f;
+          inDijkstra = false;
+          dijkstraCounter = 0;
+      }
+    } 
+    std::cout << "Path size: " << path.size() << std::endl;
+          for (const auto& cell : path) {
+              map[cell.row][cell.col] = -5;
+              std::cout << "(" << cell.row << "," << cell.col << ") ";
+          }
+    std::cout << "\nCX " << cx << "\n";
+    std::cout << "CY " << cx << "\n";
+    if (!path.empty()){
+        float angle_to_target = std::atan2(target_cy-cy, target_cx-cx);
+        float angle_diff = angle_to_target - yaw;
+        if (angle_diff >= 0){
+          if (angle_diff <= PI/4){
+            linSpeed = 0.3;
+            angSpeed = 0.3;
+          } else {
+            angSpeed = 0.3;
+            linSpeed = 0.0;
+          }
+        } else {
+          if (angle_diff >= -1*PI/4){
+            linSpeed = 0.3;
+            angSpeed = -0.3;
+          } else {
+            angSpeed = -0.3;
+            linSpeed = 0.0;
+          }
+        }
+      
+    }
+    
+  }
+    //std::cout << "Dps do lógica do Dijkstra angulo" << "\n";
+    speed[0] = linSpeed;
+    speed[1] = angSpeed;
+    //std::cout << linSpeed << "\n";
+    //std::cout << angSpeed << "\n";
     return speed;
   }
 
